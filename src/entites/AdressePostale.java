@@ -21,4 +21,11 @@ public class AdressePostale {
 	public String getAdressePostale() {
 		return (this.numeroRue + " " + this.libelleRue + " - " + this.codePostal + ", " + this.ville);
 	}
+
+	@Override
+	public String toString() {
+		return numeroRue + " " + libelleRue + " - " + codePostal + ", " + ville;
+	}
+	
+	
 }

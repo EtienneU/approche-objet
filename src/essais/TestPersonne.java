@@ -25,10 +25,16 @@ public class TestPersonne {
 		p1.setAdressePostale(new AdressePostale(444, "Chemin du Vieil Arbre", "84200", "Carpentras"));
 		p1.adressePostale.afficheAdressePostale();
 		
+		// avec méthode afficheAdressePostale
 		System.out.print("p2 : " + p2.getPrenom() + " " + p2.getNom().toUpperCase() + " | adresse : ");
-		p2.adressePostale.afficheAdressePostale(); // avec méthode affichage (void)
+		p2.adressePostale.afficheAdressePostale();
 		
-		System.out.print("p1 : " + p1.getPrenom() + " " + p1.getNom().toUpperCase() 
-				+ " | adresse : " + p1.adressePostale.getAdressePostale()); // avec méthode get (String)
+		// avec méthode getAdressePostale
+		System.out.println("p1 : " + p1.getPrenom() + " " + p1.getNom().toUpperCase() 
+				+ " | adresse : " + p1.adressePostale.getAdressePostale()); 
+		
+		// avec méthode toString (implicite)
+		System.out.print("p1 : " + p1.getPrenom() + " " + p1.getNom().toUpperCase() + " | adresse : ");	
+		System.out.println(p1.adressePostale);
 	}
 }
