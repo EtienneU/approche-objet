@@ -2,10 +2,10 @@ package fr.diginamic.banque.entites;
 
 public class Compte {
 	
-	private long numero; // je fais le choix du type long pour saisir un grand numéro 
+	private String numero; // je fais le choix du type long pour saisir un grand numéro 
 	private float solde;
 	
-	public Compte(long numero, float solde) {
+	public Compte(String numero, float solde) {
 		this.numero = numero;
 		this.solde = solde;
 	}
@@ -15,11 +15,11 @@ public class Compte {
 		return "Compte [n° " + numero + " - solde = " + solde + " €]";
 	}
 
-	public long getNumero() {
+	public String getNumero() {
 		return numero;
 	}
 
-	public void setNumero(long numero) {
+	public void setNumero(String numero) {
 		this.numero = numero;
 	}
 

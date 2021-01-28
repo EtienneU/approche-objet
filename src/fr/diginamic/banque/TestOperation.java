@@ -27,7 +27,7 @@ public class TestOperation {
 					+ " - date : " + opArray[i].getDate()
 					+ " | montant : " + opArray[i].getMontant() + " €");
 			
-			if (opArray[i].afficherType() == "Credit") {
+			if (opArray[i].afficherType().equals("Credit")) {
 				montantGlobal += opArray[i].getMontant();
 			} else {
 				montantGlobal -= opArray[i].getMontant();
