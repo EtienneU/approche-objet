@@ -11,9 +11,7 @@ public abstract class Operation {
 //		System.out.println("Opération réalisée");
 	}
 	
-	public String afficherType() {
-		return "- No type -";
-	}
+	public abstract String afficherType();
 
 	public String getDate() {
 		return date;

@@ -7,7 +7,7 @@ public class Credit extends Operation {
 	}
 	
 	public String afficherType() {
-		return "Credit";
+		return "Crédit";
 	}
 
 }

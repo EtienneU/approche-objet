@@ -7,7 +7,7 @@ public class Debit extends Operation {
 	}
 	
 	public String afficherType() {
-		return "Debit ";
+		return "Débit ";
 	}
 
 }

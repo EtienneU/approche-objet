@@ -9,7 +9,7 @@ public class TestOperation {
 	public static void main(String[] args) {
 
 		Operation[] opArray = {
-				new Credit("2020.12.01", 450), 
+				new Credit("2020.12.01", 450f), 
 				new Debit("2021.01.23", 33.21f),
 				new Debit("2021.01.25", 290f), 
 				new Credit("2021.01.28", 95.12f), 
@@ -27,9 +27,9 @@ public class TestOperation {
 					+ " - date : " + opArray[i].getDate()
 					+ " | montant : " + opArray[i].getMontant() + " €");
 			
-			if (opArray[i].afficherType().equals("Credit")) {
+			if (opArray[i].afficherType().equals("Crédit")) {
 				montantGlobal += opArray[i].getMontant();
-			} else {
+			} else if (opArray[i].afficherType().equals("Débit ")){
 				montantGlobal -= opArray[i].getMontant();
 			}
 		}
