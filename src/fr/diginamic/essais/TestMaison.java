@@ -13,12 +13,12 @@ public class TestMaison {
 	public static void main(String[] args) {
 
 		Piece[] tabPieces1 = { 
-				new Chambre(12f, (short) 1), 
+				new Chambre(12f, (short) 1),
 				new Chambre(13f, (short) 1),
-				new Salon(19f, (short) 0), 
+				new Salon(19f, (short) 0),
 				new Wc(2f, (short) 1),
-				new Wc(4f, (short) 0), 
-				new SalleDeBain(5f, (short) 1), 
+				new Wc(4f, (short) 0),
+				new SalleDeBain(5f, (short) 1),
 				new Cuisine(9f, (short) 0) };
 
 		Maison m1 = new Maison(tabPieces1);

@@ -9,12 +9,18 @@ public class Spectacle {
 	private int nbInscrits;
 	
 	public Spectacle(String nom, String type, double tarif, int capaciteMax, int nbInscrits) {
-		super();
 		this.nom = nom;
 		this.type = type;
 		this.tarif = tarif;
 		this.capaciteMax = capaciteMax;
 		this.nbInscrits = nbInscrits;
+	}
+	
+	public void afficheData() {
+		System.out.println(
+				"'" + nom.toUpperCase() + "' (type " + type.toUpperCase() + ") : "
+				+ tarif + " €/place | " + nbInscrits + " réservations (sur " + capaciteMax + " places tot.) -> "
+				+ (capaciteMax - nbInscrits) + " places encore dispos.");
 	}
 
 	public String getNom() {
