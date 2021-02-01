@@ -1,6 +1,6 @@
 package fr.diginamic.formes;
 
-public class Rectangle extends Forme{
+public class Rectangle extends Forme {
 	
 	private double longueur;
 	private double largeur;

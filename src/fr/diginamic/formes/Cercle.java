@@ -1,10 +1,11 @@
 package fr.diginamic.formes;
 
-public class Cercle extends Forme{
+public class Cercle extends Forme {
 	
 	private double ray;
 
 	public Cercle(double ray) {
+		super();
 		this.ray = ray;
 	}
 	

@@ -15,6 +15,9 @@ public class TestForme {
 			AffichageForme.afficher(tabFormes[i]);
 		}
 		
+		AffichageForme.afficher(new Cercle(2d));
+		AffichageForme.afficher(new Rectangle(2d, 3d));
+		
 	}
 
 }
