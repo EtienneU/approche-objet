@@ -1,6 +1,6 @@
 package fr.diginamic.geometrie;
 
-public class Rectangle implements ObjetGeometrique{
+public class Rectangle implements ObjetGeometrique {
 	
 	private double longueur;
 	private double largeur;

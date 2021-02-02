@@ -1,6 +1,6 @@
 package fr.diginamic.geometrie;
 
-public class Cercle implements ObjetGeometrique{
+public class Cercle implements ObjetGeometrique {
 
 	private double ray;
 
@@ -10,7 +10,6 @@ public class Cercle implements ObjetGeometrique{
 	
 	@Override
 	public double perimetre() {
-		// j'arrondi le résultat à deux décimales
 		return 2 * Math.PI * ray;
 	}
 

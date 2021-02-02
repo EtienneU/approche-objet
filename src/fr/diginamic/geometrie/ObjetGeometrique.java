@@ -8,13 +8,13 @@ public interface ObjetGeometrique {
 * @return double
 */
 	
-double perimetre();
-/** Retourne le périmètre
+double perimetre(); // " public abstract " est implicite
+/** Retourne le périmètre de mon objet géométrique
 * @return double
 */
 
-double surface();
-/** Retourne la surface
+double surface(); // " public abstract " est implicite
+/** Retourne la surface de mon objet géométrique
 * @return double
 */
 }
