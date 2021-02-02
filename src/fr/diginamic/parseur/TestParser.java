@@ -1,14 +1,18 @@
 package fr.diginamic.parseur;
 
+import java.text.DecimalFormat;
+
 public class TestParser {
 
 	public static void main(String[] args) {
+		
+		DecimalFormat df = new DecimalFormat("#.##");
 
-		String chaine = "4.6+2.2";
+		String chaine = "3.4-z";
 		Expression expr = Parser.parse(chaine);
 		System.out.println("expr = \"" + expr + "\"");
-//		double resultat = expr.evaluer("x", 2.5); 	// expression évaluée avec x = 2.5
-//		System.out.println(expr.evaluer("x", 2.5)); // affiche 5.5
+		double resultat = expr.evaluer("z", 2.5);
+		System.out.println("Valeur de expr : " + df.format(resultat)); 
 	}
 
 }
