@@ -1,6 +1,6 @@
 package fr.diginamic.listes;
 
-public class Ville implements Comparable<Ville>{
+public class Ville implements Comparable<Ville> {
 	
 	private String nom;
 	private int nbHab;
