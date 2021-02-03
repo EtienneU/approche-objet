@@ -3,8 +3,6 @@ package fr.diginamic.maps;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import fr.diginamic.listes.Ville;
-
 public class ComptagePaysParContinent {
 
 	public static void main(String[] args) {

@@ -1,6 +1,6 @@
 package fr.diginamic.listes;
 
-public class Ville {
+public class Ville implements Comparable<Ville>{
 	
 	private String nom;
 	private int nbHab;
@@ -14,6 +14,12 @@ public class Ville {
 	@Override
 	public String toString() {
 		return "\n" + nom + " : " + nbHab + " hab";
+	}
+	
+	@Override
+	public int compareTo(Ville autreVille) {
+		// tri par ordre alphabétique --> Appel à la méthode compareTo() de String
+		return this.nom.compareTo(autreVille.getNom());
 	}
 
 	public String getNom() {

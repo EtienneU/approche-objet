@@ -37,6 +37,7 @@ public class MapVilles {
 			}
 		}
 		// S'assurer que l'on place en paramètre la clé et non pas la valeur
+		System.out.println("Suppression de " + villeMinHab + "\n");
 		mapVilles.remove(villeMinHab); 
 		
 		// Affichage des villes ma HashMap
