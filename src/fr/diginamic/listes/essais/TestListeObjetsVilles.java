@@ -1,6 +1,8 @@
 package fr.diginamic.listes.essais;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+
 import fr.diginamic.listes.Ville;
 
 public class TestListeObjetsVilles {
@@ -17,12 +19,13 @@ public class TestListeObjetsVilles {
 		listeVilles.add(new Ville("Marseille", 850700));
 		listeVilles.add(new Ville("Tarbes", 40600));
 		
-		System.out.println("\nListe des villes : " + listeVilles + "\n");
+		System.out.println("\nListe des villes avant traitements : " + listeVilles + "\n");
 
 		Ville villeMaxHab = listeVilles.get(0); // variable ville la plus peuplée
 		Ville villeMinHab = listeVilles.get(0); // variable ville la moins peuplée
 		int seuilHab = 100000;
 
+		// recherche de la ville la plus peuplée et la ville la moins peuplée
 		for (Ville v : listeVilles) {
 			if (v.getNbHab() >= villeMaxHab.getNbHab()) {
 				villeMaxHab = v;
@@ -35,6 +38,7 @@ public class TestListeObjetsVilles {
 		System.out.println("Suppression de la ville la moins peuplée : " + villeMinHab);
 		listeVilles.remove(villeMinHab);
 
+		// Modification du nom des villes dépassant le seuil d'habitants fixé
 		for (int i = 0; i < listeVilles.size(); i++) {
 			if (listeVilles.get(i).getNbHab() >= seuilHab) {
 				listeVilles.get(i).setNom(listeVilles.get(i).getNom().toUpperCase());
