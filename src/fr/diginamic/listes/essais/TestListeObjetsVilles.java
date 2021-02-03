@@ -10,40 +10,42 @@ public class TestListeObjetsVilles {
 	public static void main(String[] args) {
 
 		ArrayList<Ville> listeVilles = new ArrayList<>();
-		listeVilles.add(new Ville("Nice", 343000));
-		listeVilles.add(new Ville("Carcassonne", 47800));
-		listeVilles.add(new Ville("Narbonne", 53400));
-		listeVilles.add(new Ville("Lyon", 484000));
-		listeVilles.add(new Ville("Foix", 9700));
-		listeVilles.add(new Ville("Pau", 77200));
-		listeVilles.add(new Ville("Marseille", 850700));
-		listeVilles.add(new Ville("Tarbes", 40600));
+		listeVilles.add(new Ville("Nice", 343_000));
+		listeVilles.add(new Ville("Carcassonne", 47_800));
+		listeVilles.add(new Ville("Narbonne", 53_400));
+		listeVilles.add(new Ville("Lyon", 484_000));
+		listeVilles.add(new Ville("Foix", 9_700));
+		listeVilles.add(new Ville("Pau", 77_200));
+		listeVilles.add(new Ville("Marseille", 850_700));
+		listeVilles.add(new Ville("Tarbes", 40_600));
 		
 		System.out.println("\nListe des villes avant traitements : " + listeVilles + "\n");
 
 		Ville villeMaxHab = listeVilles.get(0); // variable ville la plus peuplée
 		Ville villeMinHab = listeVilles.get(0); // variable ville la moins peuplée
-		int seuilHab = 100000;
-
-		// recherche de la ville la plus peuplée et la ville la moins peuplée
-		for (Ville v : listeVilles) {
+		int indexVilleMinHab = 0; // variable index de la ville la moins peuplée
+		int seuilHab = 100_000;
+		
+		for (int i = 0; i < listeVilles.size(); i++) {
+			Ville v = listeVilles.get(i);
+			// Recherche de la ville la plus peuplée
 			if (v.getNbHab() >= villeMaxHab.getNbHab()) {
 				villeMaxHab = v;
 			}
+			// Recherche de la ville la moins peuplée
 			if (v.getNbHab() <= villeMinHab.getNbHab()) {
 				villeMinHab = v;
+				indexVilleMinHab = i;
+			}
+			// Modification du nom des villes dépassant le seuil d'habitants fixé
+			if (v.getNbHab() >= seuilHab) {
+				v.setNom(listeVilles.get(i).getNom().toUpperCase());
 			}
 		}
+		
 		System.out.println("Ville la plus peuplée : " + villeMaxHab);
 		System.out.println("Suppression de la ville la moins peuplée : " + villeMinHab);
-		listeVilles.remove(villeMinHab);
-
-		// Modification du nom des villes dépassant le seuil d'habitants fixé
-		for (int i = 0; i < listeVilles.size(); i++) {
-			if (listeVilles.get(i).getNbHab() >= seuilHab) {
-				listeVilles.get(i).setNom(listeVilles.get(i).getNom().toUpperCase());
-			}
-		}
+		listeVilles.remove(indexVilleMinHab);
 		System.out.println("\nListe des villes après traitements : " + listeVilles + "\n");
 	}
 
