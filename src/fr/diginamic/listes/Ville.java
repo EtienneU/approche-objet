@@ -13,7 +13,7 @@ public class Ville {
 	
 	@Override
 	public String toString() {
-		return "\n" + nom + " : " + nbHab + " habitants";
+		return "\n" + nom + " : " + nbHab + " hab";
 	}
 
 	public String getNom() {
