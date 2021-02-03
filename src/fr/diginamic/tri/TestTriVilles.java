@@ -21,9 +21,15 @@ public class TestTriVilles {
 		
 		System.out.println("Mes villes sans tri : \n".toUpperCase() + listeVilles + "\n");
 		
-		Collections.sort(listeVilles);
+//		Collections.sort(listeVilles); // Lorsque Ville implémente Comparable<Ville>
 		
-		System.out.println("Mes villes avec tri : \n".toUpperCase() + listeVilles + "\n");
+		Collections.sort(listeVilles, new ComparatorHabitant());
+		System.out.println("Mes villes avec tri sur le nombre d'habitants : \n".toUpperCase()
+				+ listeVilles + "\n");
+		
+		Collections.sort(listeVilles, new ComparatorNom());
+		System.out.println("Mes villes avec tri sur le nom des villes : \n".toUpperCase()
+				+ listeVilles + "\n");
 
 	}
 

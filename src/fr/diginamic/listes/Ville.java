@@ -19,7 +19,15 @@ public class Ville implements Comparable<Ville>{
 	@Override
 	public int compareTo(Ville autreVille) {
 		// tri par ordre alphabétique --> Appel à la méthode compareTo() de String
-		return this.nom.compareTo(autreVille.getNom());
+//		return this.nom.compareTo(autreVille.getNom());
+		
+		if (this.getNbHab() > autreVille.getNbHab()) {
+			return 1;
+		}
+		if (this.getNbHab() < autreVille.getNbHab()) {
+			return -1;
+		} 
+		return 0;
 	}
 
 	public String getNom() {
