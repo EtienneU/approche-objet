@@ -1,0 +1,366 @@
+NomVilles;NumDep;NbrHbitants
+Bourg-en-Bresse;01;43454
+Laon;02;26031
+Saint-Quentin;02;55940
+Soissons;02;29417
+Montluçon;03;37417
+Gap;05;42567
+Antibes;06;74982
+Cagnes-sur-Mer;06;50385
+Cannes;06;75046
+Le Cannet;06;42056
+Grasse;06;51705
+Menton;06;28942
+Nice;06;345998
+Saint-Laurent-du-Var;06;28831
+Vallauris;06;26787
+Charleville-Mézières;08;48420
+Troyes;10;61988
+Carcassonne;11;47418
+Narbonne;11;55001
+Rodez;12;25747
+Aix-en-Provence;13;146385
+Arles;13;53807
+Aubagne;13;45711
+La Ciotat;13;35758
+Istres;13;44248
+Marignane;13;33949
+Marseille;13;870018
+Martigues;13;49310
+Miramas;13;26217
+Salon-de-Provence;13;46225
+Vitrolles;13;34301
+Caen;14;108461
+Aurillac;15;27659
+Angoulême;16;44629
+La Rochelle;17;78623
+Saintes;17;26890
+Bourges;18;67841
+Vierzon;18;27036
+Brive-la-Gaillarde;19;48333
+Ajaccio;2A;70063
+Bastia;2B;45596
+Dijon;21;159031
+Saint-Brieuc;22;47058
+Bergerac;24;28166
+Périgueux;24;31505
+Besançon;25;120107
+Montbéliard;25;26015
+Montélimar;26;39924
+Romans-sur-Isère;26;34095
+Valence;26;64322
+Évreux;27;51560
+Chartres;28;40195
+Dreux;28;31575
+Brest;29;142629
+Quimper;29;66743
+Alès;30;41129
+Nîmes;30;154196
+Colomiers;31;39200
+Muret;31;25961
+Toulouse;31;482738
+Tournefeuille;31;27008
+Bègles;33;28092
+Bordeaux;33;256045
+Gradignan;33;26029
+Libourne;33;25491
+Mérignac;33;71203
+Pessac;33;62737
+Saint-Médard-en-Jalles;33;31576
+Talence;33;44040
+La Teste-de-Buch;33;26525
+Villenave-d'Ornon;33;33091
+Agde;34;28120
+Béziers;34;77894
+Lunel;34;26263
+Montpellier;34;286098
+Sète;34;44271
+Rennes;35;222104
+Saint-Malo;35;47528
+Châteauroux;36;45780
+Joué-lès-Tours;37;37974
+Tours;37;139963
+Bourgoin-Jallieu;38;28399
+Échirolles;38;36143
+Grenoble;38;160836
+Saint-Martin-d'Hères;38;38974
+Vienne;38;30178
+Mont-de-Marsan;40;31517
+Blois;41;47524
+Roanne;42;35913
+Saint-Chamond;42;35969
+Saint-Étienne;42;174298
+Nantes;44;314611
+Orvault;44;26618
+Rezé;44;41808
+Saint-Herblain;44;47502
+Saint-Nazaire;44;72295
+Saint-Sébastien-sur-Loire;44;27591
+Orléans;45;118102
+Agen;47;34565
+Angers;49;155543
+Cholet;49;55772
+Saumur;49;28554
+Sèvremoine;49;26239
+Cherbourg-en-Cotentin;50;82578
+Châlons-en-Champagne;51;46288
+Reims;51;187074
+Saint-Dizier;52;25666
+Laval;53;52359
+Nancy;54;106953
+Vandœuvre-lès-Nancy;54;30502
+Lorient;56;58789
+Vannes;56;55573
+Metz;57;119856
+Thionville;57;41396
+Nevers;58;34799
+Armentières;59;25373
+Cambrai;59;33349
+Douai;59;40860
+Dunkerque;59;89485
+Lambersart;59;28027
+Lille;59;236782
+Marcq-en-Barœul;59;39697
+Maubeuge;59;29995
+Roubaix;59;96953
+Tourcoing;59;98170
+Valenciennes;59;44509
+Villeneuve-d'Ascq;59;63085
+Wattrelos;59;41570
+Beauvais;60;57548
+Compiègne;60;41660
+Creil;60;36091
+Alençon;61;27221
+Arras;62;41973
+Béthune;62;25753
+Boulogne-sur-Mer;62;42293
+Calais;62;75719
+Hénin-Beaumont;62;26260
+Lens;62;31080
+Liévin;62;31337
+Clermont-Ferrand;63;146112
+Anglet;64;39995
+Bayonne;64;51943
+Biarritz;64;25518
+Pau;64;79022
+Tarbes;65;41862
+Perpignan;66;123602
+Haguenau;67;35024
+Illkirch-Graffenstaden;67;27505
+Schiltigheim;67;32024
+Strasbourg;67;283515
+Colmar;68;71445
+Mulhouse;68;110468
+Bron;69;41589
+Caluire-et-Cuire;69;43546
+Décines-Charpieu;69;28249
+Lyon 1er Arrondissement;69;30423
+Lyon 2e Arrondissement;69;30857
+Lyon 3e Arrondissement;69;103506
+Lyon 4e Arrondissement;69;36524
+Lyon 5e Arrondissement;69;49998
+Lyon 6e Arrondissement;69;52282
+Lyon 7e Arrondissement;69;82651
+Lyon 8e Arrondissement;69;85610
+Lyon 9e Arrondissement;69;51313
+Meyzieu;69;33351
+Oullins;69;26838
+Rillieux-la-Pape;69;30275
+Saint-Priest;69;46153
+Vaulx-en-Velin;69;48906
+Vénissieux;69;65822
+Villefranche-sur-Saône;69;37783
+Villeurbanne;69;150375
+Chalon-sur-Saône;71;47085
+Mâcon;71;34448
+Le Mans;72;146804
+Aix-les-Bains;73;30377
+Chambéry;73;60872
+Annecy;74;130257
+Annemasse;74;35461
+Thonon-les-Bains;74;36296
+Paris;75;2210875
+Dieppe;76;30588
+Le Grand-Quevilly;76;26175
+Le Havre;76;172769
+Rouen;76;112596
+Saint-Étienne-du-Rouvray;76;29180
+Sotteville-lès-Rouen;76;29766
+Bussy-Saint-Georges;77;27299
+Chelles;77;54682
+Meaux;77;56249
+Melun;77;41183
+Pontault-Combault;77;38587
+Savigny-le-Temple;77;30352
+Villeparisis;77;26507
+Chatou;78;31653
+Le Chesnay;78;28558
+Conflans-Sainte-Honorine;78;36058
+Élancourt;78;25829
+Guyancourt;78;28839
+Houilles;78;32064
+Mantes-la-Jolie;78;44231
+Montigny-le-Bretonneux;78;33535
+Les Mureaux;78;32777
+Plaisir;78;32128
+Poissy;78;37524
+Rambouillet;78;26781
+Saint-Germain-en-Laye;78;41749
+Sartrouville;78;53237
+Trappes;78;32931
+Versailles;78;87315
+Niort;79;61044
+Amiens;80;136998
+Albi;81;51151
+Castres;81;42923
+Montauban;82;61978
+Draguignan;83;40928
+Fréjus;83;54023
+La Garde;83;25645
+Hyères;83;56799
+Saint-Raphaël;83;35826
+La Seyne-sur-Mer;83;65386
+Six-Fours-les-Plages;83;33904
+Toulon;83;171643
+Avignon;84;94200
+Carpentras;84;29498
+Cavaillon;84;26985
+Orange;84;29856
+La Roche-sur-Yon;85;56991
+Châtellerault;86;32887
+Poitiers;86;90590
+Limoges;87;135140
+Épinal;88;33454
+Auxerre;89;36804
+Sens;89;26688
+Belfort;90;49926
+Athis-Mons;91;34065
+Brétigny-sur-Orge;91;26702
+Brunoy;91;26520
+Corbeil-Essonnes;91;51682
+Draveil;91;29558
+Évry;91;55425
+Grigny;91;29118
+Massy;91;50549
+Palaiseau;91;34954
+Ris-Orangis;91;29040
+Sainte-Geneviève-des-Bois;91;36219
+Savigny-sur-Orge;91;36677
+Les Ulis;91;25031
+Vigneux-sur-Seine;91;31488
+Viry-Châtillon;91;30962
+Yerres;91;29132
+Antony;92;62989
+Asnières-sur-Seine;92;86678
+Bagneux;92;39977
+Bois-Colombes;92;28607
+Boulogne-Billancourt;92;120943
+Châtenay-Malabry;92;33413
+Châtillon;92;37132
+Clamart;92;53099
+Clichy;92;60746
+Colombes;92;86050
+Courbevoie;92;82351
+La Garenne-Colombes;92;29503
+Gennevilliers;92;46939
+Issy-les-Moulineaux;92;69231
+Levallois-Perret;92;64028
+Malakoff;92;30286
+Meudon;92;46014
+Montrouge;92;49372
+Nanterre;92;96321
+Neuilly-sur-Seine;92;61501
+Le Plessis-Robinson;92;29192
+Puteaux;92;44941
+Rueil-Malmaison;92;79783
+Saint-Cloud;92;30797
+Suresnes;92;49145
+Vanves;92;28148
+Aubervilliers;93;86533
+Aulnay-sous-Bois;93;85214
+Bagnolet;93;36047
+Le Blanc-Mesnil;93;56346
+Bobigny;93;52633
+Bondy;93;53416
+Clichy-sous-Bois;93;29978
+La Courneuve;93;42712
+Drancy;93;70883
+Épinay-sur-Seine;93;55754
+Gagny;93;39391
+Livry-Gargan;93;44721
+Montfermeil;93;26262
+Montreuil;93;109235
+Neuilly-sur-Marne;93;34859
+Noisy-le-Grand;93;67086
+Noisy-le-Sec;93;43693
+Pantin;93;55585
+Pierrefitte-sur-Seine;93;29728
+Romainville;93;26640
+Rosny-sous-Bois;93;45663
+Saint-Denis;93;112309
+Saint-Ouen;93;49949
+Sevran;93;50888
+Stains;93;39776
+Tremblay-en-France;93;35866
+Villemomble;93;30227
+Villepinte;93;36809
+Alfortville;94;44136
+Cachan;94;30524
+Champigny-sur-Marne;94;77883
+Charenton-le-Pont;94;30793
+Choisy-le-Roi;94;44781
+Créteil;94;90052
+Fontenay-sous-Bois;94;53968
+Fresnes;94;27556
+L' Haÿ-les-Roses;94;31416
+Ivry-sur-Seine;94;61099
+Le Kremlin-Bicêtre;94;25422
+Limeil-Brévannes;94;26901
+Maisons-Alfort;94;55816
+Nogent-sur-Marne;94;32195
+Le Perreux-sur-Marne;94;34017
+Saint-Maur-des-Fossés;94;75833
+Sucy-en-Brie;94;26575
+Thiais;94;29295
+Villejuif;94;55805
+Villeneuve-Saint-Georges;94;33135
+Villiers-sur-Marne;94;29407
+Vincennes;94;50300
+Vitry-sur-Seine;94;93317
+Argenteuil;95;112064
+Bezons;95;29216
+Cergy;95;64451
+Eaubonne;95;25514
+Ermont;95;29400
+Franconville;95;36349
+Garges-lès-Gonesse;95;42821
+Gonesse;95;26556
+Goussainville;95;31167
+Herblay;95;29614
+Pontoise;95;31880
+Sannois;95;27118
+Sarcelles;95;58332
+Taverny;95;26541
+Villiers-le-Bel;95;27519
+Les Abymes;971;54818
+Baie-Mahault;971;31338
+Le Gosier;971;27023
+Fort-de-France;972;82030
+Le Lamentin;972;40920
+Cayenne;973;60947
+Kourou;973;26726
+Matoury;973;32768
+Remire-Montjoly;973;26170
+Saint-Laurent-du-Maroni;973;44130
+Le Port;974;35141
+La Possession;974;33337
+Saint-André;974;56088
+Saint-Benoît;974;38466
+Saint-Denis;974;149337
+Saint-Joseph;974;38167
+Saint-Leu;974;34160
+Saint-Louis;974;53832
+Saint-Paul;974;106920
+Saint-Pierre;974;85059
+Sainte-Marie;974;33587
+Le Tampon;974;78366
