@@ -27,6 +27,9 @@ public class ManipulationFichier {
 		// Récupération du contenu de notre fichier (recensement) dans une liste
 		List<String> fileLines = Files.readAllLines(pathOrigin, StandardCharsets.UTF_8); // l'option UTF_8 n'est pas obligatoire
 		fileLines.remove(0); // Suppression de l'entête (première ligne)
+//		for (String infosVille : fileLines) {
+//			System.out.println(infosVille);
+//		}
 		
 		// Création de ma liste dans laquelle je stockerai les villes sélectionnées
 		List<String> selectedVilles = new ArrayList<>();
@@ -36,10 +39,13 @@ public class ManipulationFichier {
 			String[] tabInfosVilles = line.split(";"); // Conversion de chaque ligne CSV en tableau de String
 			String nomVille = tabInfosVilles[6]; // Récupération du nom de la ville
 			String numDep = tabInfosVilles[2]; // Récupération du num de département de la ville
-			int nbHab = Integer.parseInt(tabInfosVilles[9].replace(" ", ""));
+			int nbHab = Integer.parseInt(tabInfosVilles[9].replaceAll(" ", ""));
 			// Détection et stockage des villes de plus de 25000 hab dans ma liste selectedVilles
 			if (nbHab >= 25000) {
-				Collections.addAll(selectedVilles, nomVille + ";" + numDep + ";" + nbHab);
+				String ligneSortie = nomVille + ";" + numDep + ";" + nbHab; // ';' est le séparateur
+				selectedVilles.add(ligneSortie);
+				// Ou bien ceci :
+//				Collections.addAll(selectedVilles, ligneSortie); 
 			}
 		}
 		
