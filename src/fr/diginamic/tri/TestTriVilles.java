@@ -19,6 +19,14 @@ public class TestTriVilles {
 		listeVilles.add(new Ville("Marseille", 850_700));
 		listeVilles.add(new Ville("Tarbes", 40_600));
 		
+		// Affichage avec la boucle objet
+//		for (Ville v : listeVilles) {
+//			System.out.println(v);
+//		}
+		
+		// Affichage avec expression lambda
+//		listeVilles.forEach(v -> System.out.println(v));
+		
 		System.out.println("Mes villes sans tri : \n".toUpperCase() + listeVilles + "\n");
 		
 //		Collections.sort(listeVilles); // Lorsque Ville implémente Comparable<Ville>

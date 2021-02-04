@@ -21,7 +21,6 @@ public class MapVilles {
 		listeVilles.add(new Ville("Tarbes", 40_600));
 
 		HashMap<String, Ville> mapVilles = new HashMap<>();
-		
 		// Insertion de mes couples Nom-Ville dans ma HashMap
 		for (Ville v : listeVilles) {
 			mapVilles.put(v.getNom(), v);
@@ -29,23 +28,23 @@ public class MapVilles {
 		
 		// Recherche et suppression de la ville la moins peuplée
 		Iterator<String> iterVilles = mapVilles.keySet().iterator();
-		String villeMinHab = iterVilles.next(); // 1er élément de mon iterator = 1er clé de ma map
+		String villeMinHab = iterVilles.next(); // 1er élément de mon iterator
 		while (iterVilles.hasNext()) {
 			String ville = iterVilles.next();
 			if (mapVilles.get(ville).getNbHab() <= mapVilles.get(villeMinHab).getNbHab()) {
 				villeMinHab = ville;
 			}
 		}
+		System.out.println("Suppression de la ville de " + villeMinHab + "\n");
 		// S'assurer que l'on place en paramètre la clé et non pas la valeur
-		System.out.println("Suppression de " + villeMinHab + "\n");
 		mapVilles.remove(villeMinHab); 
 		
-		// Affichage des villes ma HashMap
+		// Affichage des villes de ma HashMap
 		System.out.print("HashMap mapVilles : [".toUpperCase());
-		iterVilles = mapVilles.keySet().iterator();
-		while (iterVilles.hasNext()) {
-			String v = iterVilles.next();
-			if (iterVilles.hasNext()) {
+		Iterator<String> iterNomVilles = mapVilles.keySet().iterator();
+		while (iterNomVilles.hasNext()) {
+			String v = iterNomVilles.next();
+			if (iterNomVilles.hasNext()) {
 				System.out.print(mapVilles.get(v) + ", ");
 			} else {
 				System.out.println(mapVilles.get(v) + "]");
