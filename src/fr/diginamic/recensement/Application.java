@@ -10,12 +10,9 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Scanner;
 
-import fr.diginamic.maps.Pays;
 import fr.diginamic.recensement.comparateurs.ComparatorPopulation;
 import fr.diginamic.recensement.entites.Ville;
-import fr.diginamic.recensement.services.RecherchePopulationVille;
 
 public class Application {
 
@@ -285,23 +282,6 @@ public class Application {
 		for (Ville v : liste10VillesPopMax) {
 			System.out.println(classement++ + "- " + v.getNomCommune() + " (" + v.getPopulation() + " hab)");
 		}
-		
-		
-//		Menu.displayMenu();
-//		Scanner scan = new Scanner(System.in);
-//		byte choix = -1;
-//		while (choix < 0 || choix > 9) {
-//			System.out.print("Votre choix (chiffre entre 1 et 9) : ");
-//			choix = scan.nextByte();
-//		}
-//
-//		Recensement recensement = new Recensement();
-//		switch (choix) {
-//		case 1:
-//			RecherchePopulationVille recherche = new RecherchePopulationVille();
-//			recherche.traiter(recensement,scanner);
-//			break;
-//		}
 
 	}
 
