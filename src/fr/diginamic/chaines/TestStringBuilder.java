@@ -17,6 +17,7 @@ public class TestStringBuilder {
 		long fin = System.currentTimeMillis(); 
 		
 		System.out.println("Temp d'exécution : " + (fin - debut) + " ms");
+		
 	}
 
 }
