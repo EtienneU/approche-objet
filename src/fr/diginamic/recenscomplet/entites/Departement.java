@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Departement extends Lieu {
 	
-	// éléments propres à notre département
+	// Ã©lÃ©ments propres Ã  notre dÃ©partement
 	private Region region;
 	private Pays pays;
 	
@@ -16,7 +16,7 @@ public class Departement extends Lieu {
 		this.pays.ajoutDep(this);
 	}
 	
-	// méthode d'ajout d'une ville aux attributs de mon département
+	// mÃ©thode d'ajout d'une ville aux attributs de mon dÃ©partement
 	public void ajoutVille(Ville ville) {
 		this.population += ville.population;
 		this.listeVille.add(ville);

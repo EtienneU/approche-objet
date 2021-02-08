@@ -11,8 +11,8 @@ public class TestAdressePostale {
 		
 		AdressePostale a2 = new AdressePostale(355, "Rue des Teinturiers", "84000", "Avignon");
 		
-		System.out.println(a1); 	// appel de la méthode toString()
-		a1.afficheAdressePostale(); // appel de ma méthode afficheAdressePostale()
+		System.out.println(a1); 	// appel de la mÃ©thode toString()
+		a1.afficheAdressePostale(); // appel de ma mÃ©thode afficheAdressePostale()
 		
 	}
 	

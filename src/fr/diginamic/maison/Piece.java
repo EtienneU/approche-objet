@@ -12,14 +12,14 @@ public abstract class Piece {
 		Scanner scanner = new Scanner(System.in);
 		
 		while (superficie < 0) {
-			System.out.print("Superficie négative renseignée ! Saisir une superficie valide (en m²) : ");
+			System.out.print("Superficie nÃ©gative renseignÃ©e ! Saisir une superficie valide (en mÂ²) : ");
 			superficie = scanner.nextFloat();
 		}
 		
 		this.superficie = superficie;
 				
 		if (numEtage < 0) {
-			System.out.println("Numéro d'étage négatif renseigné ! Valorisation appliquée : numEtage = 0 (RDC)");
+			System.out.println("NumÃ©ro d'Ã©tage nÃ©gatif renseignÃ© ! Valorisation appliquÃ©e : numEtage = 0 (RDC)");
 			this.numEtage = 0;
 		} else {
 			this.numEtage = numEtage;

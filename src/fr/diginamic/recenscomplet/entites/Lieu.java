@@ -3,7 +3,7 @@ package fr.diginamic.recenscomplet.entites;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Lieu implements Comparable { // classe mère de Ville, Departement, Region et Pays
+public abstract class Lieu implements Comparable { // classe mÃ¨re de Ville, Departement, Region et Pays
 	
 	protected Integer population = 0; // classe Integer pour nos futures HashMap
 	protected String code; // identifiant unique

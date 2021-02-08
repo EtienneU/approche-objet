@@ -26,9 +26,9 @@ public class MapVilles {
 			mapVilles.put(v.getNom(), v);
 		}
 		
-		// Recherche et suppression de la ville la moins peuplée
+		// Recherche et suppression de la ville la moins peuplÃ©e
 		Iterator<String> iterVilles = mapVilles.keySet().iterator();
-		String villeMinHab = iterVilles.next(); // 1er élément de mon iterator
+		String villeMinHab = iterVilles.next(); // 1er Ã©lÃ©ment de mon iterator
 		while (iterVilles.hasNext()) {
 			String ville = iterVilles.next();
 			if (mapVilles.get(ville).getNbHab() <= mapVilles.get(villeMinHab).getNbHab()) {
@@ -36,7 +36,7 @@ public class MapVilles {
 			}
 		}
 		System.out.println("Suppression de la ville de " + villeMinHab + "\n");
-		// S'assurer que l'on place en paramètre la clé et non pas la valeur
+		// S'assurer que l'on place en paramÃ¨tre la clÃ© et non pas la valeur
 		mapVilles.remove(villeMinHab); 
 		
 		// Affichage des villes de ma HashMap

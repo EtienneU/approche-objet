@@ -13,28 +13,28 @@ public class ComptagePaysParContinent {
 		listePays.add(new Pays("Belgique", 10f, "europe"));
 		listePays.add(new Pays("Russie", 150f, "Asie"));
 		listePays.add(new Pays("Chine", 1_400f, "ASIE"));
-		listePays.add(new Pays("Indonésie", 220f, "Oceanie"));
+		listePays.add(new Pays("IndonÃ©sie", 220f, "Oceanie"));
 		listePays.add(new Pays("Australie", 20f, "OCEanie"));
-		listePays.add(new Pays("Pérou", 32f, "Amerique du Sud"));
+		listePays.add(new Pays("PÃ©rou", 32f, "Amerique du Sud"));
 		
 		HashMap<String, Integer> paysParContinent = new HashMap<>();
 				
 		// Je parcours ma liste de Pays pour compter combien il y en a par continent
 		for (int i = 0; i < listePays.size(); i++) {
 			
-			Pays pays = listePays.get(i); // pays courant (celui à l'indice i de la listePays)
-			String continent = pays.getContinent().toUpperCase(); // récupération de son attribut continent
+			Pays pays = listePays.get(i); // pays courant (celui Ã  l'indice i de la listePays)
+			String continent = pays.getContinent().toUpperCase(); // rÃ©cupÃ©ration de son attribut continent
 			
 			// Je check dans ma Hashmap si le compteur pour le continent du Pays courant 
-			// a été initialisé ou non (null)
+			// a Ã©tÃ© initialisÃ© ou non (null)
 			Integer compteur = paysParContinent.get(continent);
 			
-			// Si le compteur n'existe pas, je le créé et l'initialise à 1
+			// Si le compteur n'existe pas, je le crÃ©Ã© et l'initialise Ã  1
 			if (compteur==null) {
 				compteur = 1;
 			}
 			else {
-				// S'il existe je l'incrémente de 1
+				// S'il existe je l'incrÃ©mente de 1
 				compteur++;
 			}
 			// Je restocke la nouvelle valeur du compteur

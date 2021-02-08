@@ -12,11 +12,11 @@ public class TestIntervenant {
 		
 		System.out.println("____ Affichage simple");
 		System.out.println("Salaire de " + s.getPrenom() + " " + s.getNom().toUpperCase() 
-				+ " : " + s.getSalaire() + " €");
+				+ " : " + s.getSalaire() + " â‚¬");
 		System.out.println("Salaire de " + p.getPrenom() + " " + p.getNom().toUpperCase() 
-				+ " : " + p.getSalaire() + " €");
+				+ " : " + p.getSalaire() + " â‚¬");
 		
-		System.out.println("\n____ Affichage générique - methode abstraite afficherDonnees()");
+		System.out.println("\n____ Affichage gÃ©nÃ©rique - methode abstraite afficherDonnees()");
 		s.afficherDonnees();
 		p.afficherDonnees();
 	}

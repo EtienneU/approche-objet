@@ -18,25 +18,25 @@ public class TestOperation {
 		
 		float montantGlobal = 0f;
 		
-		System.out.println("Operations enregistrées : ");
+		System.out.println("Operations enregistrÃ©es : ");
 		for (int i = 0; i < opArray.length; i++) {
 		
-			// avant l'appel de la méthode afficherType(), 
+			// avant l'appel de la mÃ©thode afficherType(), 
 			// j'utilisais opArray[i].getClass().getSimpleName()
 			System.out.println("> " + opArray[i].afficherType()
 					+ " - date : " + opArray[i].getDate()
-					+ " | montant : " + opArray[i].getMontant() + " €");
+					+ " | montant : " + opArray[i].getMontant() + " â‚¬");
 			
-			if (opArray[i].afficherType().equals("Crédit")) {
+			if (opArray[i].afficherType().equals("CrÃ©dit")) {
 				montantGlobal += opArray[i].getMontant();
-			} else if (opArray[i].afficherType().equals("Débit ")){
+			} else if (opArray[i].afficherType().equals("DÃ©bit ")){
 				montantGlobal -= opArray[i].getMontant();
 			}
 		}
 		
 		System.out.print("Montant global : ");
 		System.out.printf("%.2f", montantGlobal);
-		System.out.println(" €");
+		System.out.println(" â‚¬");
 	
 	}
 }

@@ -16,7 +16,7 @@ public class Salarie extends Intervenant {
 
 	@Override
 	public String getStatut() {
-		return "Salarié";
+		return "SalariÃ©";
 	}
 
 }

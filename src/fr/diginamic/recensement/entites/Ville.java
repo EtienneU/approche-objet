@@ -22,7 +22,7 @@ public class Ville {
 	// Etape 2
 	@Override
 	public String toString() {
-		return nomCommune.toUpperCase() + " (code commune " + codeCommune + ") : région " + nomRegion 
+		return nomCommune.toUpperCase() + " (code commune " + codeCommune + ") : rÃ©gion " + nomRegion 
 				+ " (code " + codeRegion + "), dep = " + codeDep + ", pop = " + population + " hab\n";
 	}
 

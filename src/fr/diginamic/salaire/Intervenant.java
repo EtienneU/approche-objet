@@ -16,7 +16,7 @@ public abstract class Intervenant {
 	
 	public void afficherDonnees() {
 		System.out.println(this.getPrenom() + " " + this.getNom().toUpperCase() + " - Salaire " + this.getSalaire()
-		+ " € - Statut : " + this.getStatut());
+		+ " Ã  - Statut : " + this.getStatut());
 		// mieux que this.getClass().getSimpleName()
 	}
 

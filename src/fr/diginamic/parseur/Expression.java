@@ -17,9 +17,9 @@ public class Expression {
 	public double evaluer(String variable, double valeur) {
 		
 		double valeurDeLexpression = 0;
-		// Erreur si aucun des 2 membres ne correspond à la variable passée en paramètre
+		// Erreur si aucun des 2 membres ne correspond Ã  la variable passÃ©e en paramÃ¨tre
 		if (!mGauche.equals(variable) && !mDroite.equals(variable)) {
-			System.out.println("INFO - " + variable + " n'apparaît pas (isolé) dans l'expression...");
+			System.out.println("INFO - " + variable + " n'apparaÃ®t pas (isolÃ©) dans l'expression...");
 		}
 
 		if (operateur == '+') {
@@ -39,7 +39,7 @@ public class Expression {
 	 * 
 	 * @param membre gauche ou membre droit (de type String) de l'Expression
 	 *               variable (de type String) et sa valeur (type double)
-	 * @return double valeur numérique du membre passé en paramètre
+	 * @return double valeur numÃ©rique du membre passÃ© en paramÃ¨tre
 	 */
 	public double evaluerMembre(String membre, String variable, double valeur) {
 		double valeurDuMembre = 0;
@@ -48,7 +48,7 @@ public class Expression {
 		} else if (isANumber(membre)) {
 			valeurDuMembre = Double.parseDouble(membre);
 		} else {
-			System.out.println("ERREUR - une autre variable que " + variable + " apparaît !");
+			System.out.println("ERREUR - une autre variable que " + variable + " apparaÃ®t !");
 		}
 		return valeurDuMembre;
 	}

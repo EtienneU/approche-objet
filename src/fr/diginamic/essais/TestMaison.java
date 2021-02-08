@@ -32,7 +32,7 @@ public class TestMaison {
 		m1.ajouterPiece(null);
 		m1.ajouterPiece(new SalleDeBain(-4f, (short) 0)); 	// superficie saisie incorrecte
 		m1.ajouterPiece(new Chambre(15f, (short) -2)); 		// etage saisi incorrect
-		m1.getTabPieces()[m1.getTabPieces().length - 1].setNumEtage((short) 2); // correction manuelle de l'étage
+		m1.getTabPieces()[m1.getTabPieces().length - 1].setNumEtage((short) 2); // correction manuelle de l'Ã©tage
 		
 		// Second affichage - APRES AJOUTS
 		m1.afficheDescription();

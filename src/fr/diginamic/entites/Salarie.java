@@ -14,7 +14,7 @@ public class Salarie {
 
 	@Override
 	public String toString() {
-		return "Salarié : [Nom = " + nom.toUpperCase() + ", Prenom = " + prenom + ", Salaire = " + salaire + " €/mois]";
+		return "SalariÃ© : [Nom = " + nom.toUpperCase() + ", Prenom = " + prenom + ", Salaire = " + salaire + " â‚¬/mois]";
 	}
 
 	public String getNom() {

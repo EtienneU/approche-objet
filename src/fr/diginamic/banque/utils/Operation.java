@@ -8,7 +8,7 @@ public abstract class Operation {
 	public Operation(String date, float montant) {
 		this.date = date;
 		this.montant = montant;
-//		System.out.println("Opération réalisée");
+//		System.out.println("OpÃ©ration rÃ©alisÃ©e");
 	}
 	
 	public abstract String afficherType();

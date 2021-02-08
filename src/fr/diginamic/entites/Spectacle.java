@@ -3,7 +3,7 @@ package fr.diginamic.entites;
 public class Spectacle {
 
 	private String nom;
-	private String type;  // concert, comédie, improvisation ou danse
+	private String type;  // concert, comÃ©die, improvisation ou danse
 	private double tarif; // unitaire
 	private int capaciteMax;
 	private int nbInscrits;
@@ -19,7 +19,7 @@ public class Spectacle {
 	public void afficheData() {
 		System.out.println(
 				"'" + nom.toUpperCase() + "' (type " + type.toUpperCase() + ") : "
-				+ tarif + " €/place | " + nbInscrits + " réservations (sur " + capaciteMax + " places tot.) -> "
+				+ tarif + " â‚¬/place | " + nbInscrits + " rÃ©servations (sur " + capaciteMax + " places tot.) -> "
 				+ (capaciteMax - nbInscrits) + " places encore dispos.");
 	}
 

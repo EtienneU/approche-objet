@@ -6,7 +6,7 @@ public class TestTheatre {
 
 	public static void main(String[] args) {
 
-		Theatre th = new Theatre("L'Oignon Givré", (short)657, (short)35, 1360d);
+		Theatre th = new Theatre("L'Oignon GivrÃ©", (short)657, (short)35, 1360d);
 		
 		th.affichageEtat();
 		

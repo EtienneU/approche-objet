@@ -20,13 +20,13 @@ public class Recensement {
 	private Map<String, Departement> mapDep = new HashMap<>();
 	private Pays france;
 
-	// Mon constructeur détient l'intelligence de ma classe
+	// Mon constructeur dÃ©tient l'intelligence de ma classe
 	public Recensement(String file) throws IOException {
 
 		Path pathFile = Paths.get(file);
-		// Récupération des lignes du fichier CSV dans une liste de String
-		List<String> infosBrutesVilles = Files.readAllLines(pathFile); // l'option UTF_8 est active par défaut
-		infosBrutesVilles.remove(0); // Je retire la ligne d'entête
+		// RÃ©cupÃ©ration des lignes du fichier CSV dans une liste de String
+		List<String> infosBrutesVilles = Files.readAllLines(pathFile); // l'option UTF_8 est active par dÃ©faut
+		infosBrutesVilles.remove(0); // Je retire la ligne d'entÃªte
 
 		france = new Pays("France");
 		
@@ -42,7 +42,7 @@ public class Recensement {
 			String nomCommune = tabInfosVilles[6];
 			int populationTotale = Integer.parseInt(tabInfosVilles[9].replaceAll(" ", ""));
 
-			// On vérifie si ma mapRegion possède déjà la clé codeRegion
+			// On vÃ©rifie si ma mapRegion possÃ¨de dÃ©jÃ  la clÃ© codeRegion
 			if (!mapRegions.containsKey(codeRegion)) {
 				Region region = new Region(codeRegion, nomRegion, france);
 				mapRegions.put(codeRegion, region);
@@ -70,7 +70,7 @@ public class Recensement {
 		this.compteurVilles = compteur;
 	}
 
-	// Methode générique pour traiter les données d'un fichier
+	// Methode gÃ©nÃ©rique pour traiter les donnÃ©es d'un fichier
 	public void recencerFichier(String pathFile) throws IOException {
 
 	}

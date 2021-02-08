@@ -19,7 +19,7 @@ public class TestCercle {
 
 		System.out.println("Mes cercles : ");
 		for (int i = 0; i < circleArray.length; i++) {
-			System.out.println("> " + circleArray[i].getClass().getSimpleName() + " - pÈrimËtre = "
+			System.out.println("> " + circleArray[i].getClass().getSimpleName() + " - p√©rim√®tre = "
 					+ df.format(circleArray[i].perimetre()) + ", surface = " + df.format(circleArray[i].surface()));
 		}
 	}

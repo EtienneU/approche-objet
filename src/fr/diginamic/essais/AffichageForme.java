@@ -6,7 +6,7 @@ public class AffichageForme {
 	
 	public static void afficher(Forme shape) {
 		System.out.println("> " + shape.getClass().getSimpleName() + " --> Surface = " 
-				+ shape.calculerSurface() + ", Périmètre = " + shape.calculerPerimetre());
+				+ shape.calculerSurface() + ", PÃ©rimÃ¨tre = " + shape.calculerPerimetre());
 	}
 	
 }

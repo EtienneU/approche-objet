@@ -15,16 +15,16 @@ public class MenuService {
 	
 	private static String menu =  "----------------------------  M E N U  ----------------------------\n"
 			+     "|                                                                 |\n"
-			+     "|  Sélectionner une donnée à afficher :                           |\n"
+			+     "|  SÃ©lectionner une donnÃ©e Ã  afficher :                           |\n"
 			+     "|                                                                 |\n"
-			+     "|  1- Population d'une ville donnée                               |\n"
-			+     "|  2- Population d'un département donné                           |\n"
-			+     "|  3- Population d'une région donnée                              |\n"
-			+     "|  4- Afficher les 10 régions les plus peuplées                   |\n"
-			+     "|  5- Afficher les 10 département les plus peuplés                |\n"
-			+     "|  6- Afficher les 10 villes les plus peuplées d'un département   |\n"
-			+     "|  7- Afficher les 10 villes les plus peuplées d'une région       |\n"
-			+     "|  8- Afficher les 10 villes les plus peuplées de France          |\n"
+			+     "|  1- Population d'une ville donnÃ©e                               |\n"
+			+     "|  2- Population d'un dÃ©partement donnÃ©                           |\n"
+			+     "|  3- Population d'une rÃ©gion donnÃ©e                              |\n"
+			+     "|  4- Afficher les 10 rÃ©gions les plus peuplÃ©es                   |\n"
+			+     "|  5- Afficher les 10 dÃ©partement les plus peuplÃ©s                |\n"
+			+     "|  6- Afficher les 10 villes les plus peuplÃ©es d'un dÃ©partement   |\n"
+			+     "|  7- Afficher les 10 villes les plus peuplÃ©es d'une rÃ©gion       |\n"
+			+     "|  8- Afficher les 10 villes les plus peuplÃ©es de France          |\n"
 			+     "|                                                                 |\n"
 			+     "|  9- Quitter                                                     |\n"
 			+     "|_________________________________________________________________|\n";
@@ -46,9 +46,9 @@ public class MenuService {
 	}
 	
 	protected String verifSiEntreeExiste (List<Lieu> listeLieu, String choixRecherche, Scanner scanner) {
-		// tant que ce que rentre l'utilisateur ne correspond à rien
+		// tant que ce que rentre l'utilisateur ne correspond Ã  rien
 		while (!verifSiEntreeOk(listeLieu, choixRecherche)) {
-			System.out.println("La saisie ne correspond à rien");
+			System.out.println("La saisie ne correspond Ã  rien");
 			System.out.println("1- Saisir de nouveau \n2- Retour");
 			Integer newChoix = Integer.parseInt(scanner.nextLine());
 			while( newChoix < 1 || newChoix > 2) {

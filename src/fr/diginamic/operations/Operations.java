@@ -13,7 +13,7 @@ public class Operations {
 		} else if (c == '/') {
 			return a / b;
 		} else {
-			System.out.println("Opérateur invalide - somme par défaut");
+			System.out.println("OpÃ©rateur invalide - somme par dÃ©faut");
 			return a + b;
 		}
 	}

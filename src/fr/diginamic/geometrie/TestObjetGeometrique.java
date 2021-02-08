@@ -6,8 +6,8 @@ public class TestObjetGeometrique {
 
 	public static void main(String[] args) {
 		
-		// Instance de DecimalFormat pour appeler la méthode format()
-		// et ainsi n'affciher que 2 chiffres après la virgule
+		// Instance de DecimalFormat pour appeler la mÃ©thode format()
+		// et ainsi n'affciher que 2 chiffres aprÃ¨s la virgule
         DecimalFormat df = new DecimalFormat("#.##");
 
 		ObjetGeometrique[] geomArray = {
@@ -15,11 +15,11 @@ public class TestObjetGeometrique {
 				new Rectangle(4d, 3d)
 		};
 
-	System.out.println("Mes objets géométriques (u = unité de longueur): ");
+	System.out.println("Mes objets gÃ©omÃ©triques (u = unitÃ© de longueur): ");
 		for (int i = 0; i < geomArray.length; i++) {
 			System.out.println("> " + geomArray[i].getClass().getSimpleName()
-					+ " - périmètre = " + df.format(geomArray[i].perimetre())
-					+ " u, surface = " + df.format(geomArray[i].surface()) + " u²");
+					+ " - pÃ©rimÃ¨tre = " + df.format(geomArray[i].perimetre())
+					+ " u, surface = " + df.format(geomArray[i].surface()) + " uÂ²");
 		}
 		
 	}

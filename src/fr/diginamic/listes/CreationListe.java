@@ -13,7 +13,7 @@ public class CreationListe {
 			entiersList.add(i++);
 		}
 		
-		System.out.println("Ma collection de " + entiersList.size() + " éléments :\n" + entiersList);
+		System.out.println("Ma collection de " + entiersList.size() + " Ã©lÃ©ments :\n" + entiersList);
 	}
 
 }

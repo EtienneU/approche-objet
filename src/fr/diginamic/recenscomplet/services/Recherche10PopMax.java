@@ -19,7 +19,7 @@ public class Recherche10PopMax extends MenuService {
 		
 		if (choixMenu == 4 || choixMenu == 5 || choixMenu == 8 )  {
 			System.out.println("Top10");
-			if (choixMenu == 4) { // Pour les 10 regions les plus peuplées de France
+			if (choixMenu == 4) { // Pour les 10 regions les plus peuplÃ©es de France
 				choixListe = recens.getPays().getListeRegion();
 			} else if (choixMenu == 5){
 				choixListe = recens.getPays().getListeDep();	
@@ -30,7 +30,7 @@ public class Recherche10PopMax extends MenuService {
 		} else { // choixMenu == 6 ou 7
 			List<Lieu> choixNumber2= new ArrayList<>();
 			if (choixMenu == 6) {
-				System.out.print("Saisir un code département : ");
+				System.out.print("Saisir un code dÃ©partement : ");
 				choixNumber2 = recens.getPays().getListeDep();
 				this.choixRecherche = scanner.nextLine();
 			} else {
@@ -53,7 +53,7 @@ public class Recherche10PopMax extends MenuService {
 			}
 		}
 
-		// Appel à ma fonction d'affichage de ma classe MenuService
+		// Appel Ã  ma fonction d'affichage de ma classe MenuService
 		this.displayTop10(choixListe);
 		
 		System.out.println("\nAppuyer sur une touche pour continuer");

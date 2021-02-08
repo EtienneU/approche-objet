@@ -16,7 +16,7 @@ public class Maison {
 		}
 
 		if (piece == null) {
-			System.out.println("Erreur 'Piece is null'. Ajout par défaut : Chambre de 9m²");
+			System.out.println("Erreur 'Piece is null'. Ajout par dÃ©faut : Chambre de 9mÂ²");
 			temp[tabPieces.length] = new Chambre(9f, (short) 0);
 		} else {
 			temp[tabPieces.length] = piece;
@@ -127,38 +127,38 @@ public class Maison {
 	}
 	
 	public void afficheDescription() {
-		System.out.print("\nMaison de " + this.getSuperficieTot() + " m² ");
+		System.out.print("\nMaison de " + this.getSuperficieTot() + " mÂ² ");
 		if (this.getEtages() == 0) {
 			System.out.print(" plain-pied ");
 		} else {
-			System.out.print("sur " + (this.getEtages() + 1) + " niveaux (RDC + " + this.getEtages() + " étage-s) ");
+			System.out.print("sur " + (this.getEtages() + 1) + " niveaux (RDC + " + this.getEtages() + " Ã©tage-s) ");
 		}
-		System.out.println("disposant de " + this.tabPieces.length + " pièces : ");	
+		System.out.println("disposant de " + this.tabPieces.length + " piÃ¨ces : ");	
 		System.out.println(" -  " + this.getNbPiecesParTypePiece((byte) 1) + " chambre-s  " 
-				+ this.getSuperficieParTypePiece((byte) 1) + " m² au total");
+				+ this.getSuperficieParTypePiece((byte) 1) + " mÂ² au total");
 		System.out.println(" -  " + this.getNbPiecesParTypePiece((byte) 2) + " salon-s    " 
-				+ this.getSuperficieParTypePiece((byte) 2) + " m² au total");
+				+ this.getSuperficieParTypePiece((byte) 2) + " mÂ² au total");
 		System.out.println(" -  " + this.getNbPiecesParTypePiece((byte) 3) + " cuisine-s  " 
-				+ this.getSuperficieParTypePiece((byte) 3) + " m² au total");
+				+ this.getSuperficieParTypePiece((byte) 3) + " mÂ² au total");
 		System.out.println(" -  " + this.getNbPiecesParTypePiece((byte) 4) + " SDB        " 
-				+ this.getSuperficieParTypePiece((byte) 4) + " m² au total");
+				+ this.getSuperficieParTypePiece((byte) 4) + " mÂ² au total");
 		System.out.println(" -  " + this.getNbPiecesParTypePiece((byte) 5) + " Wc         " 
-				+ this.getSuperficieParTypePiece((byte) 5) + " m² au total");
+				+ this.getSuperficieParTypePiece((byte) 5) + " mÂ² au total");
 
 		if (this.getEtages() > 0) {
 			for (short i = 0; i <= this.getEtages(); i++) {
 				if (i == 0) {
-					System.out.print(this.getSuperficieParEtage(i) + " m² au RDC | ");
+					System.out.print(this.getSuperficieParEtage(i) + " mÂ² au RDC | ");
 				} else if (i == 1) {
-					System.out.print(this.getSuperficieParEtage(i) + " m² au 1er étage | ");
+					System.out.print(this.getSuperficieParEtage(i) + " mÂ² au 1er Ã©tage | ");
 				} else {
-					System.out.print(this.getSuperficieParEtage(i) + " m² au " + i + "ème étage | ");
+					System.out.print(this.getSuperficieParEtage(i) + " mÂ² au " + i + "Ã¨me Ã©tage | ");
 				}
 			}
 			System.out.println("\n");
 		}
 		
-		//		m1.getSuperficieParEtage((short) 0) + " m² au RDC - " + m1.getSuperficieParEtage((short) 1)
+		//		m1.getSuperficieParEtage((short) 0) + " mÂ² au RDC - " + m1.getSuperficieParEtage((short) 1)
 	}
 
 	public Piece[] getTabPieces() {

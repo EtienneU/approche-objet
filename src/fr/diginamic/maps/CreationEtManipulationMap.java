@@ -14,13 +14,13 @@ public class CreationEtManipulationMap {
 		mapVilles.put(75, "Paris");
 		mapVilles.put(31, "Toulouse");
 
-		// Ajout d'un couple de clé-valeur
+		// Ajout d'un couple de clÃ©-valeur
 		mapVilles.put(59, "Lille");
 		mapVilles.put(69, "Lyon");
 		mapVilles.put(33, "Bordeaux");
 
-		// Affichage de mes départements (clés de ma HashMap)
-		System.out.print("Départements (clés) : [");
+		// Affichage de mes dÃ©partements (clÃ©s de ma HashMap)
+		System.out.print("DÃ©partements (clÃ©s) : [");
 		Iterator<Integer> iterDep = mapVilles.keySet().iterator();
 		while (iterDep.hasNext()) {
 			int dep = iterDep.next();

@@ -26,19 +26,19 @@ public class TheatrePro {
 				return tabSpectacles[i];
 			}
 		}
-		System.out.println("Aucun spectacle intitulÈ '" + nom + "'");
+		System.out.println("Aucun spectacle intitul√© '" + nom + "'");
 		return null;
 	}
 
 	public void afficheAll() {
 		if (tabSpectacles == null || tabSpectacles.length == 0) {
-			System.out.println("\nLe thÈ‚tre " + nom.toUpperCase() + " ne propose pas encore de spectacle...");
+			System.out.println("\nLe th√©√¢tre " + nom.toUpperCase() + " ne propose pas encore de spectacle...");
 		} else if (tabSpectacles.length == 1) {
-			System.out.println("\nLe thÈ‚tre " + nom.toUpperCase() + " propose 1 spectacle : \n - ");
+			System.out.println("\nLe th√©√¢tre " + nom.toUpperCase() + " propose 1 spectacle : \n - ");
 			tabSpectacles[0].afficheData();
 		} else {
 			System.out.println(
-					"\nLe thÈ‚tre " + nom.toUpperCase() + " propose " + tabSpectacles.length + " spectacles :\n");
+					"\nLe th√©√¢tre " + nom.toUpperCase() + " propose " + tabSpectacles.length + " spectacles :\n");
 			for (int i = 0; i < tabSpectacles.length; i++) {
 				System.out.print(" " + (i + 1) + ". ");
 				tabSpectacles[i].afficheData();
@@ -56,16 +56,16 @@ public class TheatrePro {
 					spec = tabSpectacles[i];
 					if (nbClients > tabSpectacles[i].getCapaciteMax() - tabSpectacles[i].getNbInscrits()) {
 						System.out.println("ERREUR - Inscription de " + nbClients
-								+ " clients non rÈalisÈe (capacitÈ dÈpassÈe). " + "RÈessayer avec moins de "
+								+ " clients non r√©alis√©e (capacit√© d√©pass√©e). " + "R√©essayer avec moins de "
 								+ (tabSpectacles[i].getCapaciteMax() - tabSpectacles[i].getNbInscrits())
-								+ " rÈservations.");
+								+ " r√©servations.");
 					} else {
 						tabSpectacles[i].setNbInscrits(tabSpectacles[i].getNbInscrits() + nbClients);
 					}
 				}
 			}
 			if (spec == null) {
-				System.out.println("ERREUR - " + nom.toUpperCase() + " n'est pas un spectacle proposÈ par "
+				System.out.println("ERREUR - " + nom.toUpperCase() + " n'est pas un spectacle propos√© par "
 						+ this.getNom().toUpperCase());
 			}
 		}
@@ -74,7 +74,7 @@ public class TheatrePro {
 	public double getRecetteTotale() {
 		double somme = 0;
 		if (this.getTabSpectacles() == null) {
-			System.out.println("ERREUR - Aucun tableau de spectacles renseignÈ.");
+			System.out.println("ERREUR - Aucun tableau de spectacles renseign√©.");
 			return 0;
 		}
 		for (int i = 0; i < tabSpectacles.length; i++) {

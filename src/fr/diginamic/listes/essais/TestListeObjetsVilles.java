@@ -21,32 +21,33 @@ public class TestListeObjetsVilles {
 		
 		System.out.println("\nListe des villes avant traitements : " + listeVilles + "\n");
 
-		Ville villeMaxHab = listeVilles.get(0); // variable ville la plus peuplée
-		Ville villeMinHab = listeVilles.get(0); // variable ville la moins peuplée
-		int indexVilleMinHab = 0; // variable index de la ville la moins peuplée
+		Ville villeMaxHab = listeVilles.get(0); // variable ville la plus peuplÃ©e
+		Ville villeMinHab = listeVilles.get(0); // variable ville la moins peuplÃ©e
+		int indexVilleMinHab = 0; // variable index de la ville la moins peuplÃ©e
 		int seuilHab = 100_000;
 		
 		for (int i = 0; i < listeVilles.size(); i++) {
 			Ville v = listeVilles.get(i);
-			// Recherche de la ville la plus peuplée
+			// Recherche de la ville la plus peuplÃ©e
 			if (v.getNbHab() >= villeMaxHab.getNbHab()) {
 				villeMaxHab = v;
 			}
-			// Recherche de la ville la moins peuplée
+			// Recherche de la ville la moins peuplÃ©e
 			if (v.getNbHab() <= villeMinHab.getNbHab()) {
 				villeMinHab = v;
 				indexVilleMinHab = i;
 			}
-			// Modification du nom des villes dépassant le seuil d'habitants fixé
+			// Modification du nom des villes dÃ©passant le seuil d'habitants fixÃ©
 			if (v.getNbHab() >= seuilHab) {
 				v.setNom(listeVilles.get(i).getNom().toUpperCase());
 			}
 		}
 		
-		System.out.println("Ville la plus peuplée : " + villeMaxHab);
-		System.out.println("Suppression de la ville la moins peuplée : " + villeMinHab);
+		System.out.println("Ville la plus peuplÃ©e : " + villeMaxHab);
+		System.out.println("Suppression de la ville la moins peuplÃ©e : " + villeMinHab);
 		listeVilles.remove(indexVilleMinHab);
-		System.out.println("\nListe des villes après traitements : " + listeVilles + "\n");
+		System.out.println("\nListe des villes aprÃ©s traitements : " + listeVilles + "\n");
+		
 	}
 
 }

@@ -10,7 +10,7 @@ public class Personne {
 		this.nom = nom;
 		this.prenom = prenom; 
 		this.adressePostale = adressePostale;
-		System.out.println("Nouvelle personne créée");
+		System.out.println("Nouvelle personne crÃ©Ã©e");
 	}
 	
 	public void afficheIdentite() {

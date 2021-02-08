@@ -20,8 +20,8 @@ public class TestListeInt {
 		}
 		System.out.println("Le max de ma collection est " + max);
 		
-		// Je déclare min comme Objet Integer et pas comme simple int sinon j'ai un problème 
-		// avec la méthode .remove()
+		// Je dÃ©clare min comme Objet Integer et pas comme simple int sinon j'ai un problÃ¨me 
+		// avec la mÃ©thode .remove()
 		Integer min = listeInt.get(0);
 		for (int n : listeInt) {
 			if (n <= min) {

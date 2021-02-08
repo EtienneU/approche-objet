@@ -14,7 +14,7 @@ public class Application {
 		String filePath = "C:/Users/urban/OneDrive/OD-Documents/DEV/Diginamic/Java/workspaceSTS/approche-objet/src/fr/diginamic/recenscomplet/recensement.csv";
 		Recensement recens = new Recensement(filePath);
 		
-//		System.out.println("Notre recensement compte " + recens.getCompteurVilles() + " villes françaises.\n");
+//		System.out.println("Notre recensement compte " + recens.getCompteurVilles() + " villes franÃ§aises.\n");
 		
 		Scanner scanner = new Scanner(System.in);
 		
@@ -30,27 +30,27 @@ public class Application {
 					recherche1.traiter(scanner, recens);
 					break;
 				case 2:
-					RecherchePopulation recherche2 = new RecherchePopulation(2, "département");
+					RecherchePopulation recherche2 = new RecherchePopulation(2, "dÃ©partement");
 					recherche2.traiter(scanner, recens);
 					break;
 				case 3:
-					RecherchePopulation recherche3 = new RecherchePopulation(3, "région");
+					RecherchePopulation recherche3 = new RecherchePopulation(3, "rÃ©gion");
 					recherche3.traiter(scanner, recens);
 					break;
 				case 4:
-					Recherche10PopMax recherche4 = new Recherche10PopMax(4, "région");
+					Recherche10PopMax recherche4 = new Recherche10PopMax(4, "rÃ©gion");
 					recherche4.traiter(scanner, recens);
 					break;
 				case 5:
-					Recherche10PopMax recherche5 = new Recherche10PopMax(5, "département");
+					Recherche10PopMax recherche5 = new Recherche10PopMax(5, "dÃ©partement");
 					recherche5.traiter(scanner, recens);
 					break;
 				case 6:
-					Recherche10PopMax recherche6 = new Recherche10PopMax(6, "département");
+					Recherche10PopMax recherche6 = new Recherche10PopMax(6, "dÃ©partement");
 					recherche6.traiter(scanner, recens);
 					break;
 				case 7:
-					Recherche10PopMax recherche7 = new Recherche10PopMax(7, "région");
+					Recherche10PopMax recherche7 = new Recherche10PopMax(7, "rÃ©gion");
 					recherche7.traiter(scanner, recens);
 					break;
 				case 8:

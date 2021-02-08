@@ -1,20 +1,20 @@
 package fr.diginamic.geometrie;
 
-/** Liste les méthodes obligatoires que doit posséder un objet géométrique
+/** Liste les mÃ©thodes obligatoires que doit possÃ©der un objet gÃ©omÃ©trique
 * @author Etienne URBANO
 */
 public interface ObjetGeometrique {
-/** Retourne le périmètre d’une forme géométrique
+/** Retourne le pÃ©rimÃ¨tre d'une forme gÃ©omÃ©trique
 * @return double
 */
 	
 double perimetre(); // " public abstract " est implicite
-/** Retourne le périmètre de mon objet géométrique
+/** Retourne le pÃ©rimÃ¨tre de mon objet gÃ©omÃ©trique
 * @return double
 */
 
 double surface(); // " public abstract " est implicite
-/** Retourne la surface de mon objet géométrique
+/** Retourne la surface de mon objet gÃ©omÃ©trique
 * @return double
 */
 }

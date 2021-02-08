@@ -21,15 +21,15 @@ public class Application {
 		Path pathFile = Paths.get(
 				"C:/Users/urban/OneDrive/OD-Documents/DEV/Diginamic/Java/workspaceSTS/approche-objet/src/fr/diginamic/recensement/recensement.csv");
 		// Etape 1
-		// Récupération des lignes du fichier CSV dans une liste de String
+		// RÃ©cupÃ©ration des lignes du fichier CSV dans une liste de String
 		List<String> infosBrutesVilles = Files.readAllLines(pathFile, StandardCharsets.UTF_8); // l'option UTF_8 n'est
 																								// pas obligatoire
-		infosBrutesVilles.remove(0); // Suppression de l'entête du tableau (première ligne)
+		infosBrutesVilles.remove(0); // Suppression de l'entÃªte du tableau (premiÃ¨re ligne)
 
-		// Liste qui stockera QUELQUES infos (sélectionnées) des villes extraites du fichier CSV
+		// Liste qui stockera QUELQUES infos (sÃ©lectionnÃ©es) des villes extraites du fichier CSV
 //		List<String> listeInfosVilles = new ArrayList<>();
 		
-		// Création de ma liste qui stockera toutes les villes de France (de type Ville)
+		// CrÃ©ation de ma liste qui stockera toutes les villes de France (de type Ville)
 		List<Ville> listeVilles = new ArrayList<>();
 
 		for (String line : infosBrutesVilles) {
@@ -72,8 +72,8 @@ public class Application {
 				listeVillesHerault.add(v);
 			}
 		}
-		System.out.println("Nombre d'habitants héraultais : " + popHerault + "\n");
-		System.out.println("Ville héraultaise la moins peuplée : " + villePopMin + "\n");
+		System.out.println("Nombre d'habitants hÃ©raultais : " + popHerault + "\n");
+		System.out.println("Ville hÃ©raultaise la moins peuplÃ©e : " + villePopMin + "\n");
 		
 		// Etape 6
 		Collections.sort(listeVillesHerault, new ComparatorPopulation(false));
@@ -81,14 +81,14 @@ public class Application {
 		for (int i = 0; i < 10; i++) {
 			liste10VillesMaxPop.add(listeVillesHerault.get(i));
 		}
-		System.out.println("Les 10 villes les PLUS peuplées de l'Hérault \n" + liste10VillesMaxPop + "\n");
+		System.out.println("Les 10 villes les PLUS peuplÃ©es de l'HÃ©rault \n" + liste10VillesMaxPop + "\n");
 		
 		Collections.sort(listeVillesHerault, new ComparatorPopulation(true));
 		List<Ville> liste10VillesMinPop = new ArrayList<>();
 		for (int i = 0; i < 10; i++) {
 			liste10VillesMinPop.add(listeVillesHerault.get(i));
 		}
-		System.out.println("Les 10 villes les MOINS peuplées de l'Hérault \n" + liste10VillesMinPop + "\n");
+		System.out.println("Les 10 villes les MOINS peuplÃ©es de l'HÃ©rault \n" + liste10VillesMinPop + "\n");
 		
 		// Etape 7
 		int popOccitanie = 0;
@@ -108,15 +108,15 @@ public class Application {
 			}
 		}
 		
-		// Récupération des 10 villes occitanes les plus peuplées
+		// RÃ©cupÃ©ration des 10 villes occitanes les plus peuplÃ©es
 		Collections.sort(listeVillesOccitanie, new ComparatorPopulation(false));
 		List<Ville> liste10BigVillesOccitanie = new ArrayList<>();
 		for (int i = 0; i < 10; i++) {
 			liste10BigVillesOccitanie.add(listeVillesOccitanie.get(i));
 		}
-		System.out.println("Les 10 villes les PLUS peuplées de l'Occitanie \n" + liste10BigVillesOccitanie + "\n");
+		System.out.println("Les 10 villes les PLUS peuplÃ©es de l'Occitanie \n" + liste10BigVillesOccitanie + "\n");
 		
-		// HashMap pour stocker le nombre d'habitants par département de la région Occitanie
+		// HashMap pour stocker le nombre d'habitants par dÃ©partement de la rÃ©gion Occitanie
 		HashMap<String, Integer> populationParDepOccitan = new HashMap<>();
 		for (int i = 0; i < listeVillesOccitanie.size(); i++) {
 			
@@ -124,18 +124,18 @@ public class Application {
 			String dep = ville.getCodeDep();
 			
 			Integer compteurPop = populationParDepOccitan.get(dep);
-			if (compteurPop == null) { // Si le compteur n'existe pas, je le créé et l'initialise
+			if (compteurPop == null) { // Si le compteur n'existe pas, je le crÃ©Ã© et l'initialise
 				compteurPop = ville.getPopulation();
 			}
-			else { // S'il existe je l'incrémente
+			else { // S'il existe je l'incrÃ©mente
 				compteurPop += ville.getPopulation();
 			}
-			// Je restocke la nouvelle valeur du compteur pour ce département "clé"
+			// Je restocke la nouvelle valeur du compteur pour ce dÃ©partement "clÃ©"
 			populationParDepOccitan.put(ville.getCodeDep(), compteurPop);
 		}
 		
 		// Affichage de ma HashMap		
-		System.out.print("Nbr d'habitants (valeur) par Départements (clé) en Occitanie: \n[");
+		System.out.print("Nbr d'habitants (valeur) par DÃ©partements (clÃ©) en Occitanie: \n[");
 		Iterator<String> iterDep = populationParDepOccitan.keySet().iterator();
 		while (iterDep.hasNext()) {
 			String dep = iterDep.next();
@@ -146,10 +146,10 @@ public class Application {
 			}
 		}
 		
-		// Recherche du département le plus peuplé
+		// Recherche du dÃ©partement le plus peuplÃ©
 		int popDepMax = Integer.MIN_VALUE;
 		String depMaxPop = null;
-		iterDep = populationParDepOccitan.keySet().iterator(); // Je réutilise ma variable de type Iterator
+		iterDep = populationParDepOccitan.keySet().iterator(); // Je rÃ©utilise ma variable de type Iterator
 		while (iterDep.hasNext()) {
 			String dep = iterDep.next();
 			int pop = populationParDepOccitan.get(dep);
@@ -158,10 +158,10 @@ public class Application {
 				depMaxPop = dep;
 			}
 		}
-		System.out.println("Code du département occitan le PLUS peuplé : " + depMaxPop + "\n");
+		System.out.println("Code du dÃ©partement occitan le PLUS peuplÃ© : " + depMaxPop + "\n");
 		
 		// Etape 9
-		// Création d'une HashMap qui stocke la population par Region
+		// CrÃ©ation d'une HashMap qui stocke la population par Region
 		HashMap<String, Integer> populationParRegion = new HashMap<>();
 		for (Ville v : listeVilles) {
 			
@@ -176,7 +176,7 @@ public class Application {
 			populationParRegion.put(region, compteurPop);
 		}		
 						
-		// Recherche des 10 Régions les plus peuplées de France		
+		// Recherche des 10 RÃ©gions les plus peuplÃ©es de France		
 		List<String> listeRegions = new ArrayList<>(populationParRegion.keySet());		
 		List<String> liste10RegionsPopMax = new ArrayList<>();
 
@@ -199,16 +199,16 @@ public class Application {
 			nbrRegionResultat--;
 		}
 		
-		// Affichage exhaustif du résultat
-		System.out.println("Les 10 régions françaises les plus peuplées : "); 
+		// Affichage exhaustif du rÃ©sultat
+		System.out.println("Les 10 rÃ©gions franÃ§aises les plus peuplÃ©es : "); 
 		byte classement = 1;
 		for (String region : liste10RegionsPopMax) {
 			System.out.println(classement++ + "- " + region + " (" + populationParRegion.get(region) + " hab)");
 		}
 		System.out.println("");
 		
-		// Recherche des 10 departements les plus peuplés de France
-		// Création HashMap du nombre d'habitants par département 
+		// Recherche des 10 departements les plus peuplÃ©s de France
+		// CrÃ©ation HashMap du nombre d'habitants par dÃ©partement 
 		HashMap<String, Integer> populationParDepFrance = new HashMap<>();
 		for (int i = 0; i < listeVilles.size(); i++) {
 			
@@ -247,15 +247,15 @@ public class Application {
 			nbrDepResultat--;
 		}
 		
-		// Affichage exhaustif des 10 départements les plus peuplés 
-		System.out.println("Les 10 départements français les plus peuplées : "); 
+		// Affichage exhaustif des 10 dÃ©partements les plus peuplÃ©s 
+		System.out.println("Les 10 dÃ©partements franÃ§ais les plus peuplÃ©es : "); 
 		classement = 1;
 		for (String dep : liste10DepPopMax) {
 			System.out.println(classement++ + "- " + dep + " (" + populationParDepFrance.get(dep) + " hab)");
 		}
 		System.out.println("");
 		
-		// Recherche des 10 villes françaises les plus peuplés
+		// Recherche des 10 villes franÃ§aises les plus peuplÃ©s
 		List<Ville> liste10VillesPopMax = new ArrayList<>();
 		int nbrVillesResultat = 10;
 		while (nbrVillesResultat > 0) {
@@ -276,8 +276,8 @@ public class Application {
 			nbrVillesResultat--;
 		}
 		
-		// Affichage exhaustif des 10 départements les plus peuplés 
-		System.out.println("Les 10 villes françaises les plus peuplées : ");
+		// Affichage exhaustif des 10 dÃ©partements les plus peuplÃ©s 
+		System.out.println("Les 10 villes franÃ§aises les plus peuplÃ©es : ");
 		classement = 1;
 		for (Ville v : liste10VillesPopMax) {
 			System.out.println(classement++ + "- " + v.getNomCommune() + " (" + v.getPopulation() + " hab)");

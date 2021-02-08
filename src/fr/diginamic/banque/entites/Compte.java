@@ -2,7 +2,7 @@ package fr.diginamic.banque.entites;
 
 public class Compte {
 	
-	private String numero; // je fais le choix du type long pour saisir un grand numéro 
+	private String numero; // je fais le choix du type long pour saisir un grand numÃ©ro 
 	private float solde;
 	
 	public Compte(String numero, float solde) {
@@ -12,7 +12,7 @@ public class Compte {
 
 	@Override
 	public String toString() {
-		return "Compte [n° " + numero + " - solde = " + solde + " €]";
+		return "Compte [nÂ° " + numero + " - solde = " + solde + " â‚¬]";
 	}
 
 	public String getNumero() {

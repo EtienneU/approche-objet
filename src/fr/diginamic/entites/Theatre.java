@@ -3,7 +3,7 @@ package fr.diginamic.entites;
 public class Theatre {
 
 	private String 	nom;
-	private short	nbrCapacite; // avec le type short je ne dépasse pas 32767 (ça me semble correct pour un théatre)
+	private short	nbrCapacite; // avec le type short je ne dÃ©passe pas 32767 (Ã§a me semble correct pour un thÃ©Ã¢tre)
 	private short	nbrInscrits;
 	private double	recette = 0;
 	
@@ -17,10 +17,10 @@ public class Theatre {
 	public void inscrire(short nbrClients, double prixPlace) {
 		if (nbrInscrits + nbrClients > nbrCapacite) {
 			System.err.println("Inscription de " + nbrClients 
-					+ " clients impossible. Capacité d'accueil dépassée."
+					+ " clients impossible. CapacitÃ© d'accueil dÃ©passÃ©e."
 					+ " Reessayer avec moins de " + (nbrCapacite - nbrInscrits) + " inscriptions.");
 		} else {
-			System.out.print("Inscription de " + nbrClients + " client(s) supplémentaires. ");
+			System.out.print("Inscription de " + nbrClients + " client(s) supplÃ©mentaires. ");
 			nbrInscrits += nbrClients;
 			if ((nbrCapacite - nbrInscrits) <= 1) {
 				System.out.println("Il reste " + (nbrCapacite - nbrInscrits) + " place.");
@@ -33,8 +33,8 @@ public class Theatre {
 	
 	public void affichageEtat() {
 		System.out.println("Theatre \"" + nom + "\" : " + nbrInscrits + " spectareur(s) inscrit(s).\n"
-				+ "Capacité : " + nbrCapacite + " places. " + (nbrCapacite - nbrInscrits) + " places restantes.\n"
-				+ "Recette actuelle : " + recette + " €");
+				+ "CapacitÃ© : " + nbrCapacite + " places. " + (nbrCapacite - nbrInscrits) + " places restantes.\n"
+				+ "Recette actuelle : " + recette + " â‚¬");
 	}
 
 	public String getNom() {

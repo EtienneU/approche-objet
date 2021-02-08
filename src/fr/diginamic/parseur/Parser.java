@@ -6,18 +6,18 @@ public class Parser {
 
 	/**
 	 * 
-	 * @param 	chaine la chaîne de caractère testée puis parsée en Expression
-	 * @return 	Expression avec deux membres et un opérateur, issue du parsage de ma
-	 *         	chaine de caractères
+	 * @param 	chaine la chaÃ®ne de caractÃ¨re testÃ©e puis parsÃ©e en Expression
+	 * @return 	Expression avec deux membres et un opÃ©rateur, issue du parsage de ma
+	 *         	chaine de caractÃ¨res
 	 */
 	public static Expression parse(String chaine) {
 		String membreGauche = null;
 		String membreDroite = null;
 		char operateur = '\u0000';
 
-		// Etape de test : si j'ai 0, ou plus de 2 opérateurs (inclu) --> erreur : message + retour null
+		// Etape de test : si j'ai 0, ou plus de 2 opÃ©rateurs (inclu) --> erreur : message + retour null
 		short nbOperateur = 0;
-		int indexOperateur = 0; // L'occasion de récupérer l'index de l'opérateur unique de la chaine
+		int indexOperateur = 0; // L'occasion de rÃ©cupÃ©rer l'index de l'opÃ©rateur unique de la chaÃ®ne
 		for (int i = 0; i < chaine.length(); i++) {
 			for (int j = 0; j < tabOperateurs.length; j++) {
 				if (chaine.charAt(i) == tabOperateurs[j]) {
@@ -27,7 +27,7 @@ public class Parser {
 			}
 		}
 		if (nbOperateur != 1) {
-			System.out.println("ERREUR - la chaine de caractères doit contenir UN OPERATEUR. Ni plus ni moins.");
+			System.out.println("ERREUR - la chaine de caractÃ¨res doit contenir UN OPERATEUR. Ni plus ni moins.");
 			return null;
 		}
 

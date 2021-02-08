@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Region extends Lieu {
 
-	// liste de département propres à notre Region
+	// liste de dÃ©partement propres Ã  notre Region
 	private List<Lieu> listeDep = new ArrayList<>();
 	private Pays pays; 
 

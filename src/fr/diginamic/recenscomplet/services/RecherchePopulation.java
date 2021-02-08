@@ -18,7 +18,7 @@ public class RecherchePopulation extends MenuService {
 	public void traiter(Scanner scanner, Recensement recensement ) {
 		System.out.print("Saisir un(e) " + typeRecherche + " : ");
 		choixRecherche = scanner.nextLine();
-		// création de notre liste générique de lieu (Ville, Dep, Region ou Pays)
+		// crÃ©ation de notre liste gÃ©nÃ©rique de lieu (Ville, Dep, Region ou Pays)
 		List<Lieu> choixListe = new ArrayList<>(); 
 		if (choixMenu == 1) {
 			// je vais chercher ma liste de Villes dans mon attribut Pays
@@ -34,7 +34,7 @@ public class RecherchePopulation extends MenuService {
 			return;
 		}
 
-		// recherche de l'occurence dans ma liste de lieu générique
+		// recherche de l'occurence dans ma liste de lieu gÃ©nÃ©rique
 		String message = null;
 		for (Lieu lieu : choixListe) {
 			if(choixRecherche.equals(lieu.getCode())) {

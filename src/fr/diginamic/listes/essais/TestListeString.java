@@ -21,7 +21,7 @@ public class TestListeString {
 			}
 		}
 		
-		System.out.println("Ville possédant le plus de lettres : " + longueVille);
+		System.out.println("Ville possÃ©dant le plus de lettres : " + longueVille);
 		
 		for (int i = 0; i < listeVilles.size(); i++) {
 			listeVilles.set(i, listeVilles.get(i).toUpperCase());
@@ -37,7 +37,7 @@ public class TestListeString {
 			}
 		}
 		
-		System.out.println("Villes après traitements : " + listeVilles);
+		System.out.println("Villes aprÃ¨s traitements : " + listeVilles);
 	}
 
 }
