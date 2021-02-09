@@ -1,5 +1,9 @@
 package fr.diginamic.entites;
 
+/**
+ * @author Etienne Urbano
+ *
+ */
 public class Theatre {
 
 	private String 	nom;
