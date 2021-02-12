@@ -17,6 +17,7 @@ public class TestEnumeration {
 		String libelle = "Hiver";
 		Saison result = Saison.find(libelle);
 		System.out.println("Résultat de recherche avec '" + libelle + "': saison '" + result.getLibelle() + "' (ordre n°" + result.getOrdre() + ")");
+	
 	}
-
+	
 }
