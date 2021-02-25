@@ -6,6 +6,7 @@ import java.util.Scanner;
 import fr.diginamic.recenscomplet.services.MenuService;
 import fr.diginamic.recenscomplet.services.Recherche10PopMax;
 import fr.diginamic.recenscomplet.services.RecherchePopulation;
+import fr.diginamic.recenscomplet.Recensement;
 
 public class Application {
 
@@ -13,8 +14,6 @@ public class Application {
 
 		String filePath = "C:/Users/urban/OneDrive/OD-Documents/DEV/Diginamic/Java/workspaceSTS/approche-objet/src/fr/diginamic/recenscomplet/recensement.csv";
 		Recensement recens = new Recensement(filePath);
-		
-//		System.out.println("Notre recensement compte " + recens.getCompteurVilles() + " villes françaises.\n");
 		
 		Scanner scanner = new Scanner(System.in);
 		

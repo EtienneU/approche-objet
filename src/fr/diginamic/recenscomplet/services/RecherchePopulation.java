@@ -1,6 +1,9 @@
 package fr.diginamic.recenscomplet.services;
 
+import java.sql.Connection;
+import java.sql.ResultSet;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
@@ -14,6 +17,8 @@ public class RecherchePopulation extends MenuService {
 		this.typeRecherche = typeRecherche;
 		
 	}
+	
+
 	
 	public void traiter(Scanner scanner, Recensement recensement ) {
 		System.out.print("Saisir un(e) " + typeRecherche + " : ");
@@ -47,4 +52,6 @@ public class RecherchePopulation extends MenuService {
 		scanner.nextLine();
 		return;
 	}
+	
+	
 }
