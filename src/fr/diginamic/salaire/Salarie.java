@@ -2,15 +2,15 @@ package fr.diginamic.salaire;
 
 public class Salarie extends Intervenant {
 
-	private double salaire;
+	private float salaire;
 
-	public Salarie(String nom, String prenom, double salaire) {
+	public Salarie(String nom, String prenom, float salaire) {
 		super(nom, prenom);
 		this.salaire = salaire;
 	}
 
 	@Override
-	public double getSalaire() {
+	public float getSalaire() {
 		return salaire;
 	}
 

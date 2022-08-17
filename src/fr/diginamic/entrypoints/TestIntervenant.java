@@ -7,10 +7,10 @@ public class TestIntervenant {
 
 	public static void main(String[] args) {
 
-		Salarie s = new Salarie("Calista", "Veronique", 1905.47);
-		Pigiste p = new Pigiste("El Bilaz", "Ilias", (byte)11, 150.0d);
+		Salarie s = new Salarie("El Bilaz", "Ilias", 1905.47f);
+		Pigiste p = new Pigiste("Calista", "Veronique", (byte)11, 150.0f);
 		
-		System.out.println("____ Affichage simple");
+		System.out.println("____ Affichage élémentaire");
 		System.out.println("Salaire de " + s.getPrenom() + " " + s.getNom().toUpperCase() 
 				+ " : " + s.getSalaire() + " €");
 		System.out.println("Salaire de " + p.getPrenom() + " " + p.getNom().toUpperCase() 
@@ -20,5 +20,4 @@ public class TestIntervenant {
 		s.afficherDonnees();
 		p.afficherDonnees();
 	}
-
 }

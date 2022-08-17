@@ -1,18 +1,17 @@
 package fr.diginamic.salaire;
 
 public class Pigiste extends Intervenant {
-
 	private byte nbrJoursTravailMensuel;
-	private double tauxJournalier;
+	private float tauxJournalier;
 
-	public Pigiste(String nom, String prenom, byte nbrJoursTravailMensuel, double tauxJournalier) {
+	public Pigiste(String nom, String prenom, byte nbrJoursTravailMensuel, float tauxJournalier) {
 		super(nom, prenom);
 		this.nbrJoursTravailMensuel = nbrJoursTravailMensuel;
 		this.tauxJournalier = tauxJournalier;
 	}
 
 	@Override
-	public double getSalaire() {
+	public float getSalaire() {
 		return nbrJoursTravailMensuel * tauxJournalier;
 	}
 
@@ -20,5 +19,4 @@ public class Pigiste extends Intervenant {
 	public String getStatut() {
 		return "Pigiste";
 	}
-
 }

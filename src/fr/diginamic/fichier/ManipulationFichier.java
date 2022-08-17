@@ -54,5 +54,4 @@ public class ManipulationFichier {
 		Files.write(pathCible, selectedVilles);
 		
 	}
-
 }

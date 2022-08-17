@@ -10,13 +10,12 @@ public abstract class Intervenant {
 		this.prenom = prenom;
 	}
 
-	public abstract double getSalaire();
-	
+	public abstract float getSalaire();
 	public abstract String getStatut();
 	
 	public void afficherDonnees() {
 		System.out.println(this.getPrenom() + " " + this.getNom().toUpperCase() + " - Salaire " + this.getSalaire()
-		+ " à - Statut : " + this.getStatut());
+		+ " € - Statut : " + this.getStatut());
 		// mieux que this.getClass().getSimpleName()
 	}
 
@@ -35,5 +34,4 @@ public abstract class Intervenant {
 	public void setPrenom(String prenom) {
 		this.prenom = prenom;
 	}
-
 }
