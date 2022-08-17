@@ -1,7 +1,6 @@
 package fr.diginamic.formes;
 
 public class Rectangle extends Forme {
-	
 	private double longueur;
 	private double largeur;
 	
@@ -20,5 +19,4 @@ public class Rectangle extends Forme {
 	public double calculerPerimetre() {
 		return 2 * (longueur + largeur);
 	}
-
 }

@@ -1,7 +1,6 @@
 package fr.diginamic.formes;
 
 public class Cercle extends Forme {
-	
 	private double ray;
 
 	public Cercle(double ray) {
@@ -26,5 +25,4 @@ public class Cercle extends Forme {
 	public void setRay(double ray) {
 		this.ray = ray;
 	}
-
 }

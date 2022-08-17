@@ -9,15 +9,10 @@ public class TestForme {
 	
 	public static void main(String[] args) {
 
-		Forme[] tabFormes = new Forme[] {new Cercle(6d), new Rectangle(43d, 52d), new Carre(13d)};
+		Forme[] tabFormes = new Forme[] {new Cercle(7d), new Rectangle(43d, 52d), new Carre(14d)};
 		
-		for (int i = 0; i < tabFormes.length; i++) {
-			AffichageForme.afficher(tabFormes[i]);
+		for (Forme forme: tabFormes) {
+			AffichageForme.afficher(forme);
 		}
-		
-		AffichageForme.afficher(new Cercle(2d));
-		AffichageForme.afficher(new Rectangle(2d, 3d));
-		
 	}
-
 }

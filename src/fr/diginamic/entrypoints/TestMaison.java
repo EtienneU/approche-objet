@@ -13,9 +13,9 @@ public class TestMaison {
 	public static void main(String[] args) {
 
 		Piece[] tabPieces1 = {
-				new Chambre(12f, (short) 1),
+				new Chambre(15f, (short) 1), 
 				new Chambre(13f, (short) 1),
-				new Salon(19f, (short) 0),
+				new Salon(-19f, (short) 0), // test avec mauvaise valeur et demande de saisie intéractive
 				new Wc(2f, (short) 1),
 				new Wc(4f, (short) 0),
 				new SalleDeBain(5f, (short) 1),
@@ -37,5 +37,4 @@ public class TestMaison {
 		// Second affichage - APRES AJOUTS
 		m1.afficheDescription();
 	}
-
 }
