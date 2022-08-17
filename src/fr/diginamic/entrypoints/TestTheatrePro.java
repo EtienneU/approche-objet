@@ -1,4 +1,4 @@
-package fr.diginamic.essais;
+package fr.diginamic.entrypoints;
 
 import fr.diginamic.entites.Spectacle;
 import fr.diginamic.entites.TheatrePro;
@@ -16,32 +16,31 @@ public class TestTheatrePro {
 				new Spectacle("Faux Amis", 				"comédie", 			21d, 	245, 27	)
 		};
 
-		
 		TheatrePro thPro = new TheatrePro("L'Autruche à Bulles", tabSpectacles);
 		thPro.afficheAll();
 		thPro.ajouterSpectacle(new Spectacle("Tadayoshi", "danse", 58d, 318, 47));
 		
-		// test methode getSpectacle(String nom)
+		// Test methode getSpectacle(String nom)
 		Spectacle spec = thPro.getSpectacle("Nora Tour");
-		System.out.println("\nIl ne reste plus que " + (spec.getCapaciteMax() - spec.getNbInscrits()) + " place(s) "
+		System.out.println("\nIl reste " + (spec.getCapaciteMax() - spec.getNbInscrits()) + " place(s) "
 				+ "pour le spectacle " + spec.getNom().toUpperCase());
 		
-		// test methode inscrire(int nbClients, String nom)
+		// Test methode inscrire(int nbClients, String nom)
 		thPro.inscrire(25, "La Cantatrice Chauve"); // avec erreur "dépassement de capacité"
-		thPro.inscrire(4, "Les Misérables"); 		// avec erreur "Spectacle introuvable"
+		thPro.inscrire(4,  "Les Misérables"); 		// avec erreur "Spectacle introuvable"
 		thPro.inscrire(45, null); 					// avec erreur "spectacle = null"
-		thPro.inscrire(7, "Jeux de Maux"); 			// sans erreur
+		thPro.inscrire(7,  "Jeux de Maux"); 		// sans erreur
 		thPro.afficheAll();
 		
 		System.out.println("Recette totale du théâtre " + thPro.getNom().toUpperCase() + " : "
 				+  thPro.getRecetteTotale() + " €");
 		
 		
+		// Je teste l'affichage pour un théatre qui ne propose pas de spectacle
 		TheatrePro thProNul = new TheatrePro("Silence Revolver", null);
 		thProNul.afficheAll();
 		System.out.println("Recette totale du théâtre " + thProNul.getNom().toUpperCase() + " : "
 				+  thProNul.getRecetteTotale() + " €");
 
 	}
-
 }

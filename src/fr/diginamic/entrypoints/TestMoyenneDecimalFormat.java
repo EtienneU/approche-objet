@@ -1,14 +1,13 @@
-package fr.diginamic.essais;
+package fr.diginamic.entrypoints;
 
 import java.text.DecimalFormat;
 import java.util.Random;
 
 import fr.diginamic.operations.CalculMoyenne;
 
-public class TestMoyenne {
+public class TestMoyenneDecimalFormat {
 
 	public static void main(String[] args) {
-		
 	    DecimalFormat df = new DecimalFormat("#.##");
 
 		CalculMoyenne tab1 = new CalculMoyenne();
@@ -26,11 +25,12 @@ public class TestMoyenne {
 		System.out.println("Moyenne de tab1 = " + df.format(moy));
 		
 
-		Random rand = new Random(); // importe de la classe Random de java.util
+		// Création d'un tableau de 10 doubles aléatoires compris entre 0 et 20)
+		Random rand = new Random(); // import de la classe Random de java.util
 		int i = 0;
-		while(i <= 10) {
+		while(i++ < 10) {
+			System.out.println(rand.nextDouble());
 			tab2.ajout(0d + (20d - 0d) * rand.nextDouble());
-			i++;
 		}
 		
 		System.out.print("tab2 = ");
@@ -38,7 +38,5 @@ public class TestMoyenne {
 		
 		moy = tab2.calcul();
 		System.out.println("Moyenne de tab2 = " + df.format(moy));
-	
  	}
-
 }

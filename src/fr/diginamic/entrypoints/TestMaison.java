@@ -1,4 +1,4 @@
-package fr.diginamic.essais;
+package fr.diginamic.entrypoints;
 
 import fr.diginamic.maison.Chambre;
 import fr.diginamic.maison.Cuisine;
@@ -12,7 +12,7 @@ public class TestMaison {
 
 	public static void main(String[] args) {
 
-		Piece[] tabPieces1 = { 
+		Piece[] tabPieces1 = {
 				new Chambre(12f, (short) 1),
 				new Chambre(13f, (short) 1),
 				new Salon(19f, (short) 0),

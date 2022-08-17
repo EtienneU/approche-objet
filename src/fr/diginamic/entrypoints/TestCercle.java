@@ -1,4 +1,4 @@
-package fr.diginamic.essais;
+package fr.diginamic.entrypoints;
 
 import java.text.DecimalFormat;
 
@@ -9,6 +9,7 @@ public class TestCercle {
 
 	public static void main(String[] args) {
 
+		// Classe de formatage native Java
 		DecimalFormat df = new DecimalFormat("#.##");
 
 		Cercle c1 = new Cercle(14);

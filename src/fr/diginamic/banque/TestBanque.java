@@ -9,21 +9,21 @@ public class TestBanque {
 
 		Compte 		c1 = new Compte("5465768798L", 3250f);
 		CompteTaux 	c2 = new CompteTaux("142637485932L", 132.76f, 2.3f);
+		CompteTaux  c3 = new CompteTaux("45e5477448844", 9584.71f, 0.98f);
 		
 		System.out.println("c1 : " + c1);
-		System.out.println("Solde de c2 : " + c2.getSolde());
+		System.out.println("Solde de c2 : " + c2.getSolde() + " €");
 		System.out.println("Taux de c2 : " + c2.getTaux() + " %");
 		System.out.println("Type de c2 : " + c2.getClass().getSimpleName());
 		System.out.println("c2 : " + c2);
 		
-		Compte[] compteArray = new Compte[] {c1, c2};
+		Compte[] compteArray = new Compte[] {c1, c2, c3};
 		System.out.println("Mon tableau de comptes :");
 		for (int i = 0; i < compteArray.length; i++) {
 			System.out.println("- " + compteArray[i]);
-//			if ( compteArray[i] instanceof CompteTaux) {
+//			if (compteArray[i] instanceof CompteTaux) {
 //				System.out.println("^ This one is CompteTaux ^");
 //			}
-			
 		}
 	}
 }

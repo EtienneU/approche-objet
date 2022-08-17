@@ -1,13 +1,10 @@
-/**
- * 
- */
-package fr.diginamic.essais;
+package fr.diginamic.entrypoints;
 
 /**
  * @author EtienneUrbano
  *
  */
-public class TestClasseAnonyme {
+public class TestOperationClasseAnonyme {
 
 	/**
 	 * @param args
@@ -15,48 +12,38 @@ public class TestClasseAnonyme {
 	public static void main(String[] args) {
 
 
-		Operation addition = new Operation() {
-
+		OperationInterface addition = new OperationInterface() {
 			@Override
 			public int calcul(int a, int b) {
 				return a + b;
 			}
-			
 		};
 		
-		Operation soustraction = new Operation() {
-
+		OperationInterface soustraction = new OperationInterface() {
 			@Override
 			public int calcul(int a, int b) {
 				return a - b;
 			}
-			
 		};
 		
-		Operation multiplication = new Operation() {
-
+		OperationInterface multiplication = new OperationInterface() {
 			@Override
 			public int calcul(int a, int b) {
 				return a * b;
 			}
-			
 		};
 		
-		Operation impro = new Operation() {
-
+		OperationInterface impro = new OperationInterface() {
 			@Override
 			public int calcul(int a, int b) {
-				return (a-b) * (5*b-3*a);
+				return (a - b) * (5 * b - 3 * a);
 			}
-			
 		};
 		
 		System.out.println(addition.calcul(5, 8));
 		System.out.println(soustraction.calcul(5, 8));
 		System.out.println(multiplication.calcul(5, 8));
 		System.out.println(impro.calcul(5, 8));
-
 		
 	}
-
 }

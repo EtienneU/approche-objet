@@ -1,4 +1,4 @@
-package fr.diginamic.essais;
+package fr.diginamic.entrypoints;
 
 import fr.diginamic.formes.Forme;
 

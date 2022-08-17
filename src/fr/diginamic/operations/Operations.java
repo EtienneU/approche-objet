@@ -11,9 +11,14 @@ public class Operations {
 		} else if (c == '*') {
 			return a * b;
 		} else if (c == '/') {
-			return a / b;
+			if (b == 0) {
+				System.out.println("ERROR : division by zero is forbiden...");
+				return Double.MAX_VALUE;
+			} else {
+				return a / b;
+			}
 		} else {
-			System.out.println("Opérateur invalide - somme par défaut");
+			System.out.println("Opérateur invalide - SOMME appliquée par défaut");
 			return a + b;
 		}
 	}

@@ -9,16 +9,16 @@ public class Theatre {
 	private String 	nom;
 	private short	nbrCapacite; // avec le type short je ne dépasse pas 32767 (ça me semble correct pour un théâtre)
 	private short	nbrInscrits;
-	private double	recette = 0;
+	private float	recette = 0;
 	
-	public Theatre(String nom, short nbrCapacite, short nbrInscrits, double recette) {
+	public Theatre(String nom, short nbrCapacite, short nbrInscrits, float recette) {
 		this.nom = nom;
 		this.nbrCapacite = nbrCapacite;
 		this.nbrInscrits = nbrInscrits;
 		this.recette = recette;
 	}
 	
-	public void inscrire(short nbrClients, double prixPlace) {
+	public void inscrire(short nbrClients, float prixPlace) {
 		if (nbrInscrits + nbrClients > nbrCapacite) {
 			System.err.println("Inscription de " + nbrClients 
 					+ " clients impossible. Capacité d'accueil dépassée."
@@ -38,7 +38,7 @@ public class Theatre {
 	public void affichageEtat() {
 		System.out.println("Theatre \"" + nom + "\" : " + nbrInscrits + " spectareur(s) inscrit(s).\n"
 				+ "Capacité : " + nbrCapacite + " places. " + (nbrCapacite - nbrInscrits) + " places restantes.\n"
-				+ "Recette actuelle : " + recette + " €");
+				+ "Recette actuelle : " + recette + " €\n");
 	}
 
 	public String getNom() {
@@ -65,11 +65,11 @@ public class Theatre {
 		this.nbrInscrits = nbrInscrits;
 	}
 
-	public double getRecette() {
+	public float getRecette() {
 		return recette;
 	}
 
-	public void setRecette(double recette) {
+	public void setRecette(float recette) {
 		this.recette = recette;
 	}
 	

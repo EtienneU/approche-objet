@@ -1,4 +1,4 @@
-package fr.diginamic.essais;
+package fr.diginamic.entrypoints;
 
 import fr.diginamic.operations.Operations;
 
@@ -13,8 +13,8 @@ public class TestOperations {
 		System.out.println(a + " - " + b + " = " + Operations.calcul(a, b, '-'));
 		System.out.println(a + " * " + b + " = " + Operations.calcul(a, b, '*'));
 		System.out.println(a + " / " + b + " = " + Operations.calcul(a, b, '/'));
+		System.out.println(a + " / " + b + " = " + Operations.calcul(a, 0f, '/'));
 		System.out.println(a + " & " + b + " = " + Operations.calcul(a, b, '&'));
 
 	}
-
 }

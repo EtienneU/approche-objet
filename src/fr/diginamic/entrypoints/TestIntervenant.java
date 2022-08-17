@@ -1,4 +1,4 @@
-package fr.diginamic.essais;
+package fr.diginamic.entrypoints;
 
 import fr.diginamic.salaire.Pigiste;
 import fr.diginamic.salaire.Salarie;

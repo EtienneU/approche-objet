@@ -2,7 +2,7 @@ package fr.diginamic.banque.entites;
 
 public class Compte {
 	
-	private String numero; // je fais le choix du type long pour saisir un grand numéro 
+	private String numero;
 	private float solde;
 	
 	public Compte(String numero, float solde) {

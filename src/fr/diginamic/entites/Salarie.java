@@ -4,9 +4,9 @@ public class Salarie {
 	
 	private String nom;
 	private String prenom;
-	private double salaire;
+	private float salaire;
 	
-	public Salarie(String nom, String prenom, double salaire) {
+	public Salarie(String nom, String prenom, float salaire) {
 		this.nom = nom;
 		this.prenom = prenom;
 		this.salaire = salaire;
@@ -37,7 +37,7 @@ public class Salarie {
 		return salaire;
 	}
 
-	public void setSalaire(double salaire) {
+	public void setSalaire(float salaire) {
 		this.salaire = salaire;
 	}
 

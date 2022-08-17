@@ -1,13 +1,10 @@
-/**
- * 
- */
-package fr.diginamic.essais;
+package fr.diginamic.entrypoints;
 
 /**
  * @author EtienneUrbano
  *
  */
-public interface Operation {
+public interface OperationInterface {
 	
 	public int calcul(int a, int b);
 
