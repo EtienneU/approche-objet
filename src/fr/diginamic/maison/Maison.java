@@ -9,7 +9,6 @@ public class Maison {
 	}
 
 	public void ajouterPiece(Piece piece) {
-
 		Piece[] temp = new Piece[this.tabPieces.length + 1];
 		for (int i = 0; i < tabPieces.length; i++) {
 			temp[i] = tabPieces[i];
@@ -23,7 +22,6 @@ public class Maison {
 		}
 
 		this.tabPieces = temp;
-
 	}
 
 	public float getSuperficieTot() {
@@ -168,5 +166,4 @@ public class Maison {
 	public void setTabPieces(Piece[] tabPieces) {
 		this.tabPieces = tabPieces;
 	}
-
 }
