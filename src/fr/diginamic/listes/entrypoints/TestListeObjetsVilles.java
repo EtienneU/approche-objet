@@ -1,7 +1,6 @@
-package fr.diginamic.listes.essais;
+package fr.diginamic.listes.entrypoints;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 import fr.diginamic.listes.Ville;
 

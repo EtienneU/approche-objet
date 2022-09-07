@@ -1,12 +1,10 @@
 package fr.diginamic.listes;
 
 public class Ville implements Comparable<Ville> {
-	
 	private String nom;
 	private int nbHab;
 	
 	public Ville(String nom, int nbHab) {
-		super();
 		this.nom = nom;
 		this.nbHab = nbHab;
 	}

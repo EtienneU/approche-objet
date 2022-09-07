@@ -1,8 +1,7 @@
-package fr.diginamic.listes.essais;
+package fr.diginamic.listes.entrypoints;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Iterator;
 
 public class TestListeInt {
 
@@ -20,8 +19,8 @@ public class TestListeInt {
 		}
 		System.out.println("Le max de ma collection est " + max);
 		
-		// Je déclare min comme Objet Integer et pas comme simple int sinon j'ai un problème 
-		// avec la méthode .remove()
+		// Je declare min comme Objet Integer et pas comme simple int
+		// sinon j'ai un probleme avec la methode remove()
 		Integer min = listeInt.get(0);
 		for (int n : listeInt) {
 			if (n <= min) {
@@ -36,7 +35,6 @@ public class TestListeInt {
 				listeInt.set(i, - listeInt.get(i));
 			}
 		}
-		System.out.println("listeInt sans le min et tous positifs = " + listeInt);
+		System.out.println("listeInt sans le min et en valeurs absolues = " + listeInt);
 	}
-
 }
