@@ -1,6 +1,6 @@
 package fr.diginamic.lambda;
 
-public interface Predicate {
+public interface Affirmer {
 
 	public boolean filter(Personne p);
 }
