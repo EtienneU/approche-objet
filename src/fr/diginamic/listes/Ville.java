@@ -1,5 +1,7 @@
 package fr.diginamic.listes;
 
+import java.util.Objects;
+
 public class Ville implements Comparable<Ville> {
 	private String nom;
 	private int nbHab;
@@ -17,7 +19,7 @@ public class Ville implements Comparable<Ville> {
 	@Override
 	public int compareTo(Ville autreVille) {
 		// tri par ordre alphabétique --> Appel à la méthode compareTo() de String
-//		return this.nom.compareTo(autreVille.getNom());
+		// return this.nom.compareTo(autreVille.getNom());
 		
 		if (this.getNbHab() > autreVille.getNbHab()) {
 			return 1;
@@ -49,5 +51,4 @@ public class Ville implements Comparable<Ville> {
 	public void setNbHab(int nbHab) {
 		this.nbHab = nbHab;
 	}
-
 }

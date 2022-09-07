@@ -20,33 +20,30 @@ public class TestListeObjetsVilles {
 		
 		System.out.println("\nListe des villes avant traitements : " + listeVilles + "\n");
 
-		Ville villeMaxHab = listeVilles.get(0); // variable ville la plus peuplée
-		Ville villeMinHab = listeVilles.get(0); // variable ville la moins peuplée
-		int indexVilleMinHab = 0; // variable index de la ville la moins peuplée
+		Ville villeMaxHab = listeVilles.get(0); // variable ville la plus peuplee
+		Ville villeMinHab = listeVilles.get(0); // variable ville la moins peuplee
+		int indexVilleMinHab = 0; // variable index de la ville la moins peuplee
 		int seuilHab = 100_000;
-		
-		for (int i = 0; i < listeVilles.size(); i++) {
-			Ville v = listeVilles.get(i);
-			// Recherche de la ville la plus peuplée
-			if (v.getNbHab() >= villeMaxHab.getNbHab()) {
-				villeMaxHab = v;
+
+
+		for (Ville ville: listeVilles) {
+			// Recherche de la ville la plus peuplee
+			if (ville.getNbHab() >= villeMaxHab.getNbHab()) {
+				villeMaxHab = ville;
 			}
-			// Recherche de la ville la moins peuplée
-			if (v.getNbHab() <= villeMinHab.getNbHab()) {
-				villeMinHab = v;
-				indexVilleMinHab = i;
+			// Recherche de la ville la plus peuplee
+			if (ville.getNbHab() <= villeMinHab.getNbHab()) {
+				villeMinHab = ville;
 			}
-			// Modification du nom des villes dépassant le seuil d'habitants fixé
-			if (v.getNbHab() >= seuilHab) {
-				v.setNom(listeVilles.get(i).getNom().toUpperCase());
+			// Mise en capitale du nom des villes dépassant le seuil d'habitants fixé
+			if (ville.getNbHab() >= seuilHab) {
+				ville.setNom(ville.getNom().toUpperCase());
 			}
 		}
 		
-		System.out.println("Ville la plus peuplée : " + villeMaxHab);
-		System.out.println("Suppression de la ville la moins peuplée : " + villeMinHab);
-		listeVilles.remove(indexVilleMinHab);
-		System.out.println("\nListe des villes aprés traitements : " + listeVilles + "\n");
-		
+		System.out.println("Ville la plus peuplee : " + villeMaxHab);
+		System.out.println("\nSuppression de la ville la moins peuplee : " + villeMinHab);
+		listeVilles.remove(listeVilles.indexOf(villeMinHab));
+		System.out.println("\nListe des villes apres traitements : " + listeVilles + "\n");
 	}
-
 }
