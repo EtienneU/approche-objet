@@ -1,4 +1,4 @@
-package fr.diginamic.testexceptions;
+package fr.diginamic.gestionexceptions.listeVide;
 
 public class TestReflectionUtils {
 
@@ -9,15 +9,13 @@ public class TestReflectionUtils {
 		try {
 			ReflectionsUtils.afficherAttributs(ville);
 			ReflectionsUtils.afficherAttributs(null);
-		} catch (IllegalArgumentException e) {
-			e.printStackTrace();
-		} catch (IllegalAccessException e) {
+		} catch (IllegalArgumentException | IllegalAccessException e) {
 			e.printStackTrace();
 		} catch (ReflectionException e) {
 			System.err.println(e.getMessage());
 			e.printStackTrace();
+		} catch (Exception e) {
+			e.getMessage();
 		}
-		
 	}
-
 }

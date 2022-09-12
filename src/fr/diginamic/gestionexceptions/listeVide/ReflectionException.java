@@ -1,4 +1,4 @@
-package fr.diginamic.testexceptions;
+package fr.diginamic.gestionexceptions.listeVide;
 
 public class ReflectionException extends Exception {
 	
