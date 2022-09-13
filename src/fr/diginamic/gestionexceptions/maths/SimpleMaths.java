@@ -10,6 +10,9 @@ public class SimpleMaths {
      * @return la moyenne de la liste
      */
     public static int calculateAverage(List<Integer> listOfIntegers) {
+        if (listOfIntegers.size() == 0) {
+            return 0;
+        }
         int average = 0;
         for (int value: listOfIntegers) {
             average += value;
