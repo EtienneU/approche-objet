@@ -15,7 +15,7 @@ public class testLambda {
 	private static final int AGE_MAJORITE = 18;
 
 	/**
-	 * @param args
+	 * @param args les paremtres de la methode
 	 */
 	public static void main(String[] args) {
 		
@@ -38,5 +38,9 @@ public class testLambda {
 			+	personnes.get(1).getPrenom() + " " + personnes.get(1).getNom() + " contient le terme 'Du' ? : " + affirmerNom.filter(personnes.get(1)) + "\n"
 			+ 	personnes.get(4).getPrenom() + " " + personnes.get(4).getNom() + " contient le terme 'Du' ? : " + affirmerNom.filter(personnes.get(4))
 		);
+
+		// ----- un autre exemple -----
+		Etudiant etu = leNomAafficher -> System.out.println("Je me nomme " + leNomAafficher);
+		etu.donnerNom("Marie-Claude");
 	}
 }
