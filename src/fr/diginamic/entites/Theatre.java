@@ -9,7 +9,7 @@ public class Theatre {
 	private String 	nom;
 	private short	nbrCapacite; // avec le type short je ne dépasse pas 32767 (ça me semble correct pour un théâtre)
 	private short	nbrInscrits;
-	private float	recette = 0;
+	private float	recette;
 	
 	public Theatre(String nom, short nbrCapacite, short nbrInscrits, float recette) {
 		this.nom = nom;
@@ -39,6 +39,14 @@ public class Theatre {
 		System.out.println("Theatre \"" + nom + "\" : " + nbrInscrits + " spectareur(s) inscrit(s).\n"
 				+ "Capacité : " + nbrCapacite + " places. " + (nbrCapacite - nbrInscrits) + " places restantes.\n"
 				+ "Recette actuelle : " + recette + " €\n");
+	}
+
+	@Override
+	public String toString() {
+		return "{nom='" + nom + '\'' +
+				", nbrCapacite=" + nbrCapacite +
+				", nbrInscrits=" + nbrInscrits +
+				", recette=" + recette + "€}";
 	}
 
 	public String getNom() {
