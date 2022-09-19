@@ -1,4 +1,4 @@
-package fr.diginamic.tri;
+package fr.diginamic.comparator;
 
 import java.util.Comparator;
 

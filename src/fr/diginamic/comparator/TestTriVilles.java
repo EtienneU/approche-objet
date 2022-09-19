@@ -1,4 +1,4 @@
-package fr.diginamic.tri;
+package fr.diginamic.comparator;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -19,11 +19,6 @@ public class TestTriVilles {
 		listeVilles.add(new Ville("Marseille", 850_700));
 		listeVilles.add(new Ville("Tarbes", 40_600));
 		
-		// Affichage avec la boucle objet
-//		for (Ville v : listeVilles) {
-//			System.out.println(v);
-//		}
-		
 		// Affichage avec expression lambda
 //		listeVilles.forEach(v -> System.out.println(v));
 		
@@ -31,14 +26,12 @@ public class TestTriVilles {
 		
 //		Collections.sort(listeVilles); // Lorsque Ville implémente Comparable<Ville>
 		
-		Collections.sort(listeVilles, new ComparatorHabitant());
+		listeVilles.sort(new ComparatorHabitant());
 		System.out.println("Mes villes avec tri sur le nombre d'habitants : \n".toUpperCase()
 				+ listeVilles + "\n");
 		
-		Collections.sort(listeVilles, new ComparatorNom());
+		listeVilles.sort(new ComparatorNom());
 		System.out.println("Mes villes avec tri sur le nom des villes : \n".toUpperCase()
-				+ listeVilles + "\n");
-
+				+ listeVilles);
 	}
-
 }

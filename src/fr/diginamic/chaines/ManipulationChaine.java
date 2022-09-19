@@ -28,11 +28,13 @@ public class ManipulationChaine {
 		
 		// Exemple de construction d'un objet à partir des éléments de mon tableau split()
 		Salarie s1 = new Salarie(tabSplit[0], tabSplit[1], Float.parseFloat(tabSplit[2].replace(" ", "")));
-		System.out.println("\n" + s1.toString());
+		// Appel implicite a la methode toString() de l'objet s1
+		System.out.println("\n" + s1);
 		
 		// De même avec une Factory et une méthode de construction 
 		String chaine2 = "garcia;Sophie;3 1 0 1. 0";
 		Salarie s2 = SalarieFactory.createSalarie(chaine2);
-		System.out.println(s2.toString());
+		// Appel implicite a la methode toString() de l'objet s2
+		System.out.println(s2);
 	}
 }
