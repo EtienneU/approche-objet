@@ -3,6 +3,8 @@ package fr.diginamic.genericite;
 import fr.diginamic.entites.Theatre;
 import fr.diginamic.listes.Ville;
 
+import java.lang.reflect.Method;
+
 public class TestGenericite {
 
     public static void main(String[] args) {
@@ -19,6 +21,14 @@ public class TestGenericite {
         consoleElementsDescription(duoDoubleString);
         consoleElementsDescription(duoBooleanInteger);
         consoleElementsDescription(duoVilleTheatre);
+
+        // Hors sujet : affichage du nom des methodes d'une classe
+        Class<? extends GenericDuo> c = duoVilleTheatre.getClass();
+        Method[] m = c.getMethods();
+        System.out.println("Methodes de la classe " + c.getSimpleName() + ": ");
+        for (Method method: m) {
+            System.out.print(method.getName() + "()  ");
+        }
     }
 
     /**
