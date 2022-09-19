@@ -4,6 +4,7 @@ import java.text.DecimalFormat;
 
 public class TestObjetGeometrique {
 
+	// TP mettant en lumiere le polymorphism (interfaces) et DecimalFormat
 	public static void main(String[] args) {
 		
 		// Instance de DecimalFormat pour appeler la méthode format()
@@ -16,12 +17,10 @@ public class TestObjetGeometrique {
 		};
 
 	System.out.println("Mes objets géométriques (u = unité de longueur): ");
-		for (int i = 0; i < geomArray.length; i++) {
-			System.out.println("> " + geomArray[i].getClass().getSimpleName()
-					+ " - périmètre = " + df.format(geomArray[i].perimetre())
-					+ " u, surface = " + df.format(geomArray[i].surface()) + " u²");
+		for (ObjetGeometrique objetGeometrique : geomArray) {
+			System.out.println("> " + objetGeometrique.getClass().getSimpleName()
+					+ " - périmètre = " + df.format(objetGeometrique.perimetre())
+					+ " u, surface = " + df.format(objetGeometrique.surface()) + " u²");
 		}
-		
 	}
-
 }
