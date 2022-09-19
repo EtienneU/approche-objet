@@ -40,5 +40,4 @@ public class Pays {
 	public void setContinent(Continent continent) {
 		this.continent = continent;
 	}
-
 }
