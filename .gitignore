@@ -3,6 +3,7 @@
 .project
 .classpath
 bin/
+bin
 
 # Intellij IDEA
 .idea/workspace.xml
