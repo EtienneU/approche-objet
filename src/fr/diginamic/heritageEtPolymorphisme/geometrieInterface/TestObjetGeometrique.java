@@ -1,4 +1,4 @@
-package fr.diginamic.formesEtSalaries.geometrieInterface;
+package fr.diginamic.heritageEtPolymorphisme.geometrieInterface;
 
 import java.text.DecimalFormat;
 

@@ -1,4 +1,4 @@
-package fr.diginamic.formesEtSalaries.geometrieClasseAbstraite;
+package fr.diginamic.heritageEtPolymorphisme.geometrieClasseAbstraite;
 
 public class Rectangle extends Forme {
 	private double longueur;

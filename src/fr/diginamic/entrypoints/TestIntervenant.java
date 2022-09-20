@@ -1,7 +1,7 @@
 package fr.diginamic.entrypoints;
 
-import fr.diginamic.formesEtSalaries.salaire.Pigiste;
-import fr.diginamic.formesEtSalaries.salaire.Salarie;
+import fr.diginamic.heritageEtPolymorphisme.salaire.Pigiste;
+import fr.diginamic.heritageEtPolymorphisme.salaire.Salarie;
 
 public class TestIntervenant {
 

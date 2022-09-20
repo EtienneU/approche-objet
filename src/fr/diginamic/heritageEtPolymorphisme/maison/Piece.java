@@ -1,11 +1,11 @@
-package fr.diginamic.maison;
+package fr.diginamic.heritageEtPolymorphisme.maison;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public abstract class Piece {
 
-	private float superficie;
+	private final float superficie;
 	private short numEtage;
 
 	public Piece(float superficie, short numEtage) {
@@ -23,9 +23,9 @@ public abstract class Piece {
         } catch (IllegalArgumentException iae) {
             System.out.println(iae.getMessage());
         } catch (Exception e) {
-            System.out.println(e.getMessage());
+            e.printStackTrace();
         }
-		
+
 		this.superficie = superficie;
 				
 		if (numEtage < 0) {
@@ -38,10 +38,6 @@ public abstract class Piece {
 	
 	public float getSuperficie() {
 		return superficie;
-	}
-
-	public void setSuperficie(float superficie) {
-		this.superficie = superficie;
 	}
 
 	public short getNumEtage() {

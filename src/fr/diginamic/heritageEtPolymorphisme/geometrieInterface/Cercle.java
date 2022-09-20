@@ -1,4 +1,4 @@
-package fr.diginamic.formesEtSalaries.geometrieInterface;
+package fr.diginamic.heritageEtPolymorphisme.geometrieInterface;
 
 public class Cercle implements ObjetGeometrique {
 

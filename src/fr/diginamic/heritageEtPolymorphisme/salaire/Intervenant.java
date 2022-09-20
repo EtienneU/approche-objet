@@ -1,4 +1,4 @@
-package fr.diginamic.formesEtSalaries.salaire;
+package fr.diginamic.heritageEtPolymorphisme.salaire;
 
 public abstract class Intervenant {
 	

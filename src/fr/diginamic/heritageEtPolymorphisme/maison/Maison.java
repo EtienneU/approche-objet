@@ -1,4 +1,4 @@
-package fr.diginamic.maison;
+package fr.diginamic.heritageEtPolymorphisme.maison;
 
 public class Maison {
 
@@ -161,9 +161,5 @@ public class Maison {
 
 	public Piece[] getTabPieces() {
 		return tabPieces;
-	}
-
-	public void setTabPieces(Piece[] tabPieces) {
-		this.tabPieces = tabPieces;
 	}
 }

@@ -1,4 +1,4 @@
-package fr.diginamic.formesEtSalaries.geometrieInterface;
+package fr.diginamic.heritageEtPolymorphisme.geometrieInterface;
 
 /** Liste les méthodes obligatoires que doit posséder un objet géométrique
 * @author Etienne URBANO

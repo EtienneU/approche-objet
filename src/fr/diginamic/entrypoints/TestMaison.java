@@ -1,12 +1,12 @@
 package fr.diginamic.entrypoints;
 
-import fr.diginamic.maison.Chambre;
-import fr.diginamic.maison.Cuisine;
-import fr.diginamic.maison.Maison;
-import fr.diginamic.maison.Piece;
-import fr.diginamic.maison.SalleDeBain;
-import fr.diginamic.maison.Salon;
-import fr.diginamic.maison.Wc;
+import fr.diginamic.heritageEtPolymorphisme.maison.Chambre;
+import fr.diginamic.heritageEtPolymorphisme.maison.Cuisine;
+import fr.diginamic.heritageEtPolymorphisme.maison.Maison;
+import fr.diginamic.heritageEtPolymorphisme.maison.Piece;
+import fr.diginamic.heritageEtPolymorphisme.maison.SalleDeBain;
+import fr.diginamic.heritageEtPolymorphisme.maison.Salon;
+import fr.diginamic.heritageEtPolymorphisme.maison.Wc;
 
 public class TestMaison {
 
