@@ -1,7 +1,7 @@
 package fr.diginamic.entrypoints;
 
 import java.text.DecimalFormat;
-import fr.diginamic.formes.Forme;
+import fr.diginamic.formesEtSalaries.geometrieClasseAbstraite.Forme;
 
 public class AffichageForme {
 	

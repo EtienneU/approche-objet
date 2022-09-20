@@ -1,9 +1,9 @@
 package fr.diginamic.entrypoints;
 
-import fr.diginamic.formes.Carre;
-import fr.diginamic.formes.Cercle;
-import fr.diginamic.formes.Forme;
-import fr.diginamic.formes.Rectangle;
+import fr.diginamic.formesEtSalaries.geometrieClasseAbstraite.Carre;
+import fr.diginamic.formesEtSalaries.geometrieClasseAbstraite.Cercle;
+import fr.diginamic.formesEtSalaries.geometrieClasseAbstraite.Forme;
+import fr.diginamic.formesEtSalaries.geometrieClasseAbstraite.Rectangle;
 
 public class TestForme {
 	

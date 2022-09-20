@@ -12,7 +12,7 @@ public class CalculMoyenne {
 	// Méthode d'ajout d'un double au tableau "tab"
 	public void ajout(double dbl) {
 		double[] temp = new double[tab.length + 1];
-		
+
 		for (int i = 0; i < tab.length; i++) {
 			temp[i] = tab[i];
 		}
@@ -42,13 +42,5 @@ public class CalculMoyenne {
 				System.out.print(df.format(tab[i]) + " | ");
 			}
 		}
-	}
-
-	public double[] getTab() {
-		return tab;
-	}
-
-	public void setTab(double[] tab) {
-		this.tab = tab;
 	}
 }
