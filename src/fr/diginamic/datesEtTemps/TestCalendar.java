@@ -1,4 +1,4 @@
-package fr.diginamic.dates;
+package fr.diginamic.datesEtTemps;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -10,8 +10,9 @@ public class TestCalendar {
 	public static void main(String[] args) {
 		
 		Calendar cal1 = Calendar.getInstance();
-		// Attention, le n° du mois est décallé de 1. Ici '4' désigne le mois de Mai
-		cal1.set(2016, 4, 19, 23, 59, 30);
+		// Attention, si on ecrit le n° du mois, il faut savoir qu'il est décallé de 1.
+		// A la place de Calendar.MAY, on pourrait ecrire '4'
+		cal1.set(2016, Calendar.MAY, 19, 23, 59, 30);
 		// Récupération de notre date (type Date) précédemment valorisée
 		Date d1 = cal1.getTime();
 		SimpleDateFormat f1 = new SimpleDateFormat("dd/MM/yyyy");
