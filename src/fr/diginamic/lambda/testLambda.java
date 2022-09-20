@@ -4,6 +4,7 @@
 package fr.diginamic.lambda;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.function.Function;
 
@@ -20,12 +21,16 @@ public class testLambda {
 	 */
 	public static void main(String[] args) {
 		
-		List<Personne> personnes = new ArrayList<>();
-		personnes.add(new Personne("Duchene", "Claude", 39));
-		personnes.add(new Personne("Dujardin", "Melanie", 76));
-		personnes.add(new Personne("Krank", "Giselle", 26));
-		personnes.add(new Personne("Borne", "Jonathan", 15));
-		personnes.add(new Personne("Toraidu", "Chloe", 17));
+		List<Personne> personnes = Arrays.asList(
+			new Personne("Duchene", "Claude", 39),
+			new Personne("Dujardin", "Melanie", 76),
+			new Personne("Krank", "Giselle", 26),
+			new Personne("Borne", "Jonathan", 15),
+			new Personne("Toraidu", "Chloe", 17)
+		);
+//		Sinon, on ajoute chaque instance dans un taleau créee (List<Personne> personnes = new ArrayList<>();)   :
+//		personnes.add(new Personne("Duchene", "Claude", 39));
+//		personnes.add(new Personne("Dujardin", "Melanie", 76));   ETC.
 
 		// Les expressions lambda peuvent être stockées dans des variables si le type de la variable est une interface
 		// qui n'a qu'une seule méthode. L'expression lambda doit avoir le même nombre de paramètres et le même type de

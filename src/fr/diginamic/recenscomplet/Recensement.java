@@ -82,5 +82,4 @@ public class Recensement {
 	public Pays getPays() {
 		return france;
 	}
-
 }
