@@ -19,9 +19,8 @@ public class Application {
 	public static void main(String[] args) throws IOException {
 
 		Path pathFile = Paths.get(
-				"C:/Users/urban/OneDrive/OD-Documents/DEV/Diginamic/Java/workspaceSTS/approche-objet/src/fr/diginamic/recensement/recensement.csv");
-		// Etape 1
-		// Récupération des lignes du fichier CSV dans une liste de String
+				"C:/Users/urban/OneDrive/OD-Documents/DEV/Diginamic/Java/workspaceSTS/approche-objet/src/fr/diginamic/recensementFileManager/recensementComparator/recensement.csv");
+		// Etape 1 : Récupération des lignes du fichier CSV dans une liste de String
 		List<String> infosBrutesVilles = Files.readAllLines(pathFile, StandardCharsets.UTF_8); // l'option UTF_8 n'est
 																								// pas obligatoire
 		infosBrutesVilles.remove(0); // Suppression de l'entête du tableau (première ligne)
@@ -276,13 +275,11 @@ public class Application {
 			nbrVillesResultat--;
 		}
 		
-		// Affichage exhaustif des 10 départements les plus peuplés 
+		// Affichage exhaustif des 10 villes les plus peuplees
 		System.out.println("Les 10 villes françaises les plus peuplées : ");
 		classement = 1;
 		for (Ville v : liste10VillesPopMax) {
 			System.out.println(classement++ + "- " + v.getNomCommune() + " (" + v.getPopulation() + " hab)");
 		}
-
 	}
-
 }

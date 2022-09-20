@@ -11,7 +11,7 @@ public class Application {
 
 	public static void main(String[] args) throws IOException {
 
-		String filePath = "C:/Users/urban/OneDrive/OD-Documents/DEV/Diginamic/Java/workspaceSTS/approche-objet/src/fr/diginamic/recenscomplet/recensement.csv";
+		String filePath = "C:/Users/urban/OneDrive/OD-Documents/DEV/Diginamic/Java/workspaceSTS/approche-objet/src/fr/diginamic/recensementFileManager/recensementComplet/recensement.csv";
 		Recensement recens = new Recensement(filePath);
 		
 		Scanner scanner = new Scanner(System.in);
